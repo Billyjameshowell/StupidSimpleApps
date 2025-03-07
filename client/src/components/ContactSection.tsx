@@ -44,7 +44,7 @@ export default function ContactSection() {
                 </ul>
               </div>
               
-              <div className="mt-8 pt-8 border-t border-primary-700">
+              <div className="mt-8 pt-8 border-t border-[#334155]">
                 <h4 className="text-lg font-medium mb-4">Have questions?</h4>
                 <div className="flex items-center mb-3">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-[#38bdf8] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
