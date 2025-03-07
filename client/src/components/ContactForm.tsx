@@ -137,6 +137,18 @@ export default function ContactForm() {
         >
           {submitting ? "Sending..." : "Schedule Free Consultation"}
         </Button>
+        
+        <div className="text-center mt-4">
+          <span className="text-primary-600">or</span>
+          <a 
+            href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block mt-2 text-[#0ea5e9] font-medium hover:text-[#0284c7] transition"
+          >
+            Schedule directly via Calendly
+          </a>
+        </div>
       </form>
     </Form>
   );

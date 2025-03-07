@@ -17,7 +17,7 @@ export default function HeroSection() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-6 py-3 font-semibold">
-                <a href="#contact">Get Started</a>
+                <a href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call" target="_blank" rel="noopener noreferrer">Get Started</a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-primary-300 hover:border-primary-400 bg-white hover:bg-primary-50 text-primary-800 px-6 py-3 font-semibold">
                 <a href="#how-it-works">How It Works</a>

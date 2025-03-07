@@ -37,7 +37,7 @@ export default function Header() {
               Testimonials
             </a>
             <Button asChild className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white">
-              <a href="#contact">Contact Us</a>
+              <a href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call" target="_blank" rel="noopener noreferrer">Schedule a Call</a>
             </Button>
           </nav>
           
@@ -78,11 +78,13 @@ export default function Header() {
             Testimonials
           </a>
           <a 
-            href="#contact" 
+            href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call" 
+            target="_blank" 
+            rel="noopener noreferrer"
             className="block py-2 px-2 bg-[#0ea5e9] text-white rounded text-center"
             onClick={closeMobileMenu}
           >
-            Contact Us
+            Schedule a Call
           </a>
         </div>
       </div>
