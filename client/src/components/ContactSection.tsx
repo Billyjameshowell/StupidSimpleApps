@@ -21,25 +21,25 @@ export default function ContactSection() {
               <ContactForm />
             </div>
             
-            <div className="bg-primary-900 p-8 lg:p-12 text-white flex flex-col justify-between">
+            <div className="bg-[#0f172a] p-8 lg:p-12 text-white flex flex-col justify-between">
               <div>
                 <h4 className="text-xl font-bold mb-6">Why Clients Choose Us</h4>
                 <ul className="space-y-4">
-                  <li className="flex">
-                    <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0" />
-                    <p>Custom apps designed around your specific workflow</p>
+                  <li className="flex items-start">
+                    <Check className="h-6 w-6 text-[#f97316] mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-100">Custom apps designed around your specific workflow</span>
                   </li>
-                  <li className="flex">
-                    <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0" />
-                    <p>Flat monthly fee with no per-user pricing</p>
+                  <li className="flex items-start">
+                    <Check className="h-6 w-6 text-[#f97316] mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-100">Flat monthly fee with no per-user pricing</span>
                   </li>
-                  <li className="flex">
-                    <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0" />
-                    <p>No bloated features you'll never use</p>
+                  <li className="flex items-start">
+                    <Check className="h-6 w-6 text-[#f97316] mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-100">No bloated features you'll never use</span>
                   </li>
-                  <li className="flex">
-                    <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0" />
-                    <p>Ongoing support and updates included</p>
+                  <li className="flex items-start">
+                    <Check className="h-6 w-6 text-[#f97316] mr-3 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-100">Ongoing support and updates included</span>
                   </li>
                 </ul>
               </div>
