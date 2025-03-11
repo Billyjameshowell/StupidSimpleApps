@@ -1,4 +1,6 @@
-import { Check, ChevronRight } from "lucide-react";
+
+import { ChevronRight, Check } from "lucide-react";
+import SavingsCalculator from "./SavingsCalculator";
 
 export default function HowItWorksSection() {
   return (
@@ -53,30 +55,32 @@ export default function HowItWorksSection() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h3 className="text-2xl font-bold text-primary-900 mb-4">Why Our Approach Works</h3>
+              <p className="text-primary-600 mb-6">
+                Traditional SaaS pricing charges per user, which means your costs keep growing as your team grows. Our flat monthly fee model saves you money and keeps costs predictable.
+              </p>
               <ul className="space-y-4">
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0 mt-0.5" />
+                <li className="flex">
+                  <div className="h-6 w-6 text-[#f97316] mr-3 flex-shrink-0">
+                    <Check className="h-6 w-6" />
+                  </div>
                   <div>
-                    <span className="font-medium text-primary-900">No bloated features</span>
-                    <p className="text-primary-600 text-sm">Only what you need, nothing more.</p>
+                    <span className="font-medium text-primary-900">Only pay for what you need</span>
+                    <p className="text-primary-600 text-sm">No wasted features or bloated costs.</p>
                   </div>
                 </li>
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0 mt-0.5" />
+                <li className="flex">
+                  <div className="h-6 w-6 text-[#f97316] mr-3 flex-shrink-0">
+                    <Check className="h-6 w-6" />
+                  </div>
                   <div>
-                    <span className="font-medium text-primary-900">Predictable pricing</span>
-                    <p className="text-primary-600 text-sm">Flat monthly fee, no per-user charges.</p>
+                    <span className="font-medium text-primary-900">Grow without penalty</span>
+                    <p className="text-primary-600 text-sm">Add users without increasing your monthly cost.</p>
                   </div>
                 </li>
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0 mt-0.5" />
-                  <div>
-                    <span className="font-medium text-primary-900">Designed for your workflow</span>
-                    <p className="text-primary-600 text-sm">Custom-built for how you actually work.</p>
+                <li className="flex">
+                  <div className="h-6 w-6 text-[#f97316] mr-3 flex-shrink-0">
+                    <Check className="h-6 w-6" />
                   </div>
-                </li>
-                <li className="flex items-start">
-                  <Check className="h-6 w-6 text-[#f97316] mr-2 flex-shrink-0 mt-0.5" />
                   <div>
                     <span className="font-medium text-primary-900">Ongoing improvements</span>
                     <p className="text-primary-600 text-sm">We keep enhancing your app based on your feedback.</p>
@@ -90,13 +94,13 @@ export default function HowItWorksSection() {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
                     <h4 className="font-bold text-primary-900">Traditional SaaS</h4>
-                    <div className="text-primary-400 text-sm">Per user/month</div>
+                    <div className="text-primary-400 text-sm">Total monthly cost</div>
                   </div>
                   <div className="bg-white rounded-lg p-4 border border-primary-200">
                     <div className="flex justify-between">
                       <div>
                         <div className="text-primary-900 font-medium">Basic Plan (5 users)</div>
-                        <div className="text-xs text-primary-500">Limited features</div>
+                        <div className="text-xs text-primary-500">$50 per user × 5 users</div>
                       </div>
                       <div className="font-bold text-primary-900">$250/mo</div>
                     </div>
@@ -105,7 +109,7 @@ export default function HowItWorksSection() {
                     <div className="flex justify-between">
                       <div>
                         <div className="text-primary-900 font-medium">Premium Plan (5 users)</div>
-                        <div className="text-xs text-primary-500">Extra features you don't need</div>
+                        <div className="text-xs text-primary-500">$100 per user × 5 users</div>
                       </div>
                       <div className="font-bold text-primary-900">$500/mo</div>
                     </div>
@@ -114,31 +118,35 @@ export default function HowItWorksSection() {
                     <div className="flex justify-between">
                       <div>
                         <div className="text-primary-900 font-medium">Scale to 20 users</div>
-                        <div className="text-xs text-primary-500">Same feature set</div>
+                        <div className="text-xs text-primary-500">$100 per user × 20 users</div>
                       </div>
                       <div className="font-bold text-primary-900">$2,000/mo</div>
                     </div>
                   </div>
-
-                  <div className="h-px bg-primary-200 my-2"></div>
-
+                </div>
+                
+                <div className="mt-6 pt-4 border-t border-primary-300">
                   <div className="flex justify-between items-center">
-                    <h4 className="font-bold text-primary-900">Stupid Simple Apps</h4>
+                    <h4 className="font-bold text-primary-900">Our Approach</h4>
                     <div className="text-primary-400 text-sm">Flat monthly fee</div>
                   </div>
-                  <div className="bg-[#f0f9ff] rounded-lg p-4 border border-[#bae6fd]">
-                    <div className="flex justify-between">
+                  <div className="bg-white rounded-lg p-4 border border-primary-200 mt-4">
+                    <div className="flex justify-between items-center">
                       <div>
                         <div className="text-primary-900 font-medium">Custom App</div>
-                        <div className="text-xs text-primary-500">Exactly what you need, unlimited users</div>
+                        <div className="text-xs text-primary-500">Unlimited users</div>
                       </div>
-                      <div className="font-bold text-[#0284c7]">$750/mo</div>
+                      <div className="font-bold text-[#0ea5e9] text-xl">$750/mo</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        
+        <div className="mt-16">
+          <SavingsCalculator />
         </div>
       </div>
     </section>

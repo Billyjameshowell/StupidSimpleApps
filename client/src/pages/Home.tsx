@@ -17,3 +17,22 @@ export default function Home() {
     </main>
   );
 }
+import HeroSection from "@/components/HeroSection";
+import ClientsSection from "@/components/ClientsSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContactSection";
+
+export default function Home() {
+  return (
+    <>
+      <HeroSection />
+      <ClientsSection />
+      <HowItWorksSection />
+      <TestimonialsSection />
+      <AboutSection />
+      <ContactSection />
+    </>
+  );
+}
