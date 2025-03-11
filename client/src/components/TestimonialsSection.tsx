@@ -2,9 +2,9 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    quote: "We were paying over $2,000/month for a CRM that we only used 10% of. Stupid Simple Apps built us exactly what we needed for a fraction of the cost.",
-    author: "Sarah Johnson",
-    role: "CEO, Bright Horizons"
+    quote: "A pleasure to work with. Very responsive. Highly reccomended!",
+    author: "Gerry F.",
+    role: "Owner, Service Advisor Training"
   },
   {
     quote: "The team at Stupid Simple Apps just gets it. They listened to our problems and built a solution that works exactly how we work. No learning curve, no fuss.",
