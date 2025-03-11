@@ -7,8 +7,8 @@ export default function AboutSection() {
             <div className="absolute inset-0 bg-[#0ea5e9] rounded-3xl -rotate-3 opacity-20"></div>
             <div className="relative overflow-hidden rounded-3xl shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2670&auto=format&fit=crop"
-                alt="Team working on app design" 
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop"
+                alt="Team collaborating on software" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -27,11 +27,11 @@ export default function AboutSection() {
             <div className="grid md:grid-cols-2 gap-4 mt-8">
               <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
                 <div className="text-2xl font-bold text-[#0ea5e9] mb-1">50+</div>
-                <div className="text-primary-700">Custom apps delivered</div>
+                <div className="text-primary-700">Custom apps built</div>
               </div>
               <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
-                <div className="text-2xl font-bold text-[#0ea5e9] mb-1">92%</div>
-                <div className="text-primary-700">Client retention rate</div>
+                <div className="text-2xl font-bold text-[#0ea5e9] mb-1">3.5x</div>
+                <div className="text-primary-700">Average savings</div>
               </div>
               <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
                 <div className="text-2xl font-bold text-[#0ea5e9] mb-1">3.5x</div>
