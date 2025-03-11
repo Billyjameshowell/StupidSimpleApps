@@ -66,9 +66,43 @@ export default function ContactForm() {
   });
 
   // Form submission handler
-  const onSubmit = (data: FormValues) => {
+  const onSubmit = async (data: FormValues) => {
     setSubmitting(true);
-    mutation.mutate(data);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        form.reset();
+        toast({
+          title: "Message sent!",
+          description: "We'll be in touch soon.",
+        });
+
+        // Redirect to Calendly after a brief delay
+        setTimeout(() => {
+          window.open('https://calendly.com/billy-owex/stupid-simple-apps-intro-call', '_blank');
+        }, 1500);
+      } else {
+        throw new Error(result.error || 'Something went wrong');
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: error instanceof Error ? error.message : "Failed to send message",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -91,7 +125,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        
+
         <FormField
           control={form.control}
           name="email"
@@ -110,7 +144,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        
+
         <FormField
           control={form.control}
           name="message"
@@ -129,7 +163,7 @@ export default function ContactForm() {
             </FormItem>
           )}
         />
-        
+
         <Button 
           type="submit" 
           className="w-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-medium py-2 px-4 rounded-md transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0ea5e9]"
@@ -137,7 +171,7 @@ export default function ContactForm() {
         >
           {submitting ? "Sending..." : "Schedule Free Consultation"}
         </Button>
-        
+
         <div className="text-center mt-4">
           <span className="text-primary-600">or</span>
           <a 
