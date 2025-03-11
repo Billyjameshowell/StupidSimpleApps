@@ -31,10 +31,6 @@ export default function AboutSection() {
               </div>
               <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
                 <div className="text-2xl font-bold text-[#0ea5e9] mb-1">3.5x</div>
-                <div className="text-primary-700">Average savings</div>
-              </div>
-              <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
-                <div className="text-2xl font-bold text-[#0ea5e9] mb-1">3.5x</div>
                 <div className="text-primary-700">Average ROI for clients</div>
               </div>
               <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
