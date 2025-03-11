@@ -99,6 +99,28 @@ export default function HowItWorksSection() {
                     <div className="flex justify-between">
                       <div>
                         <div className="text-primary-900 font-medium">Project Management</div>
+                        <div className="text-xs text-primary-500">$15/user/month</div>
+                      </div>
+                      <div className="font-bold text-primary-900">$150/mo</div>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border border-primary-200 mt-2">
+                    <div className="flex justify-between">
+                      <div>
+                        <div className="text-primary-900 font-medium">CRM Software</div>
+                        <div className="text-xs text-primary-500">$25/user/month</div>
+                      </div>
+                      <div className="font-bold text-primary-900">$250/mo</div>
+                    </div>
+                  </div>
+                  <div className="bg-white rounded-lg p-4 border border-primary-200 mt-2">
+                    <div className="flex justify-between">
+                      <div>
+                        <div className="text-primary-900 font-medium">Design Software</div>
+                        <div className="text-xs text-primary-500">$20/user/month</div>
+                      </div>
+                      <div className="font-bold text-primary-900">$200/mo</div>
+                    </div>v>
                         <div className="text-xs text-primary-500">$15 per user × 10 users</div>
                       </div>
                       <div className="font-bold text-primary-900">$150/mo</div>
