@@ -55,7 +55,7 @@ export default function HowItWorksSection() {
             <div>
               <h3 className="text-2xl font-bold text-primary-900 mb-4">Why Our Approach Works</h3>
               <p className="text-primary-600 mb-6">
-                Traditional SaaS pricing charges per user, which means your costs keep growing as your team grows. Our flat monthly fee model saves you money and keeps costs predictable.  Consider the costs when you factor in multiple SaaS subscriptions per team member.
+                Traditional SaaS pricing charges per user, which means your costs keep growing as your team grows. Our flat monthly fee model saves you money and keeps costs predictable. Consider the costs when you factor in multiple SaaS subscriptions per team member.
               </p>
               <ul className="space-y-4">
                 <li className="flex">
@@ -73,7 +73,7 @@ export default function HowItWorksSection() {
                   </div>
                   <div>
                     <span className="font-medium text-primary-900">Grow without penalty</span>
-                    <p className="text-primary-600 text-sm">Add users without increasing your monthly cost.</p>
+                    <p className="text-primary-600 text-sm">Add as many users as you want without increasing your cost.</p>
                   </div>
                 </li>
                 <li className="flex">
@@ -81,20 +81,19 @@ export default function HowItWorksSection() {
                     <Check className="h-6 w-6" />
                   </div>
                   <div>
-                    <span className="font-medium text-primary-900">Ongoing improvements</span>
-                    <p className="text-primary-600 text-sm">We keep enhancing your app based on your feedback.</p>
+                    <span className="font-medium text-primary-900">Ongoing support included</span>
+                    <p className="text-primary-600 text-sm">No extra charges for updates or help when you need it.</p>
                   </div>
                 </li>
               </ul>
             </div>
-            <div className="relative">
-              <div className="absolute inset-0 bg-[#f97316] rounded-xl rotate-2 opacity-10"></div>
-              <div className="bg-primary-50 p-6 rounded-xl border border-primary-200 relative">
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center">
-                    <h4 className="font-bold text-primary-900">Multiple SaaS Subscriptions</h4>
-                    <div className="text-primary-400 text-sm">Per-user pricing adds up</div>
-                  </div>
+            <div className="space-y-6">
+              <div className="bg-[#f8fafc] p-6 rounded-xl border border-primary-200">
+                <h4 className="text-xl font-bold text-primary-900 mb-4">Traditional SaaS Costs</h4>
+                <p className="text-primary-600 mb-4">
+                  For a team of 10 people using multiple tools:
+                </p>
+                <div className="space-y-2">
                   <div className="bg-white rounded-lg p-4 border border-primary-200">
                     <div className="flex justify-between">
                       <div>
@@ -104,7 +103,7 @@ export default function HowItWorksSection() {
                       <div className="font-bold text-primary-900">$150/mo</div>
                     </div>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-primary-200 mt-2">
+                  <div className="bg-white rounded-lg p-4 border border-primary-200">
                     <div className="flex justify-between">
                       <div>
                         <div className="text-primary-900 font-medium">CRM Software</div>
@@ -113,69 +112,37 @@ export default function HowItWorksSection() {
                       <div className="font-bold text-primary-900">$250/mo</div>
                     </div>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-primary-200 mt-2">
+                  <div className="bg-white rounded-lg p-4 border border-primary-200">
                     <div className="flex justify-between">
                       <div>
                         <div className="text-primary-900 font-medium">Design Software</div>
                         <div className="text-xs text-primary-500">$20/user/month</div>
                       </div>
                       <div className="font-bold text-primary-900">$200/mo</div>
-                    </div>v>
-                        <div className="text-xs text-primary-500">$15 per user × 10 users</div>
-                      </div>
-                      <div className="font-bold text-primary-900">$150/mo</div>
                     </div>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-primary-200">
-                    <div className="flex justify-between">
-                      <div>
-                        <div className="text-primary-900 font-medium">CRM Software</div>
-                        <div className="text-xs text-primary-500">$25 per user × 10 users</div>
-                      </div>
-                      <div className="font-bold text-primary-900">$250/mo</div>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 border border-primary-200">
-                    <div className="flex justify-between">
-                      <div>
-                        <div className="text-primary-900 font-medium">Workflow Automation</div>
-                        <div className="text-xs text-primary-500">$20 per user × 10 users</div>
-                      </div>
-                      <div className="font-bold text-primary-900">$200/mo</div>
-                    </div>
-                  </div>
-                  <div className="bg-white rounded-lg p-4 border border-primary-200">
-                    <div className="flex justify-between">
-                      <div>
-                        <div className="text-primary-900 font-medium">Premium Features</div>
-                        <div className="text-xs text-primary-500">Add-ons and upgrades</div>
-                      </div>
-                      <div className="font-bold text-primary-900">$300/mo</div>
-                    </div>
-                  </div>
-                  <div className="bg-primary-50 p-4 rounded-lg border border-primary-200">
-                    <div className="flex justify-between">
-                      <div>
-                        <div className="text-primary-900 font-medium font-bold">Total Monthly Cost</div>
-                        <div className="text-xs text-primary-500">For 10 team members</div>
-                      </div>
-                      <div className="font-bold text-primary-900">$900/mo</div>
+                  <div className="bg-white rounded-lg p-4 border border-primary-200 mt-3">
+                    <div className="flex justify-between items-center">
+                      <div className="text-primary-900 font-medium">Total Monthly Cost</div>
+                      <div className="font-bold text-lg text-primary-900">$600/mo</div>
                     </div>
                   </div>
                 </div>
-
-                <div className="mt-6 pt-4 border-t border-primary-300">
+              </div>
+              <div className="bg-[#ebf8ff] p-6 rounded-xl border border-[#90cdf4]">
+                <h4 className="text-xl font-bold text-[#2b6cb0] mb-4">Our Approach</h4>
+                <div className="bg-white rounded-lg p-4 border border-[#90cdf4]">
                   <div className="flex justify-between items-center">
-                    <h4 className="font-bold text-primary-900">Our Approach</h4>
-                    <div className="text-primary-400 text-sm">One flat monthly fee</div>
+                    <div className="text-[#2b6cb0] font-medium">One Flat Monthly Fee</div>
+                    <div className="font-bold text-lg text-[#2b6cb0]">$750/mo</div>
                   </div>
-                  <div className="bg-white rounded-lg p-4 border border-primary-200 mt-4">
-                    <div className="flex justify-between items-center">
-                      <div>
-                        <div className="text-primary-900 font-medium">Custom App</div>
-                        <div className="text-xs text-primary-500">Unlimited users</div>
-                      </div>
-                      <div className="font-bold text-[#0ea5e9] text-xl">$750/mo</div>
+                  <div className="text-[#4299e1] text-sm mt-1">No matter how many users</div>
+                </div>
+                <div className="mt-4 pt-4 border-t border-[#90cdf4]">
+                  <div className="flex justify-between items-center text-[#2b6cb0]">
+                    <div className="font-medium">Annual savings vs. traditional SaaS</div>
+                    <div className="font-bold text-lg">
+                      ${(600 - 750) * -12}/year
                     </div>
                   </div>
                 </div>
