@@ -7,6 +7,11 @@ const testimonials = [
     role: "Owner, Service Advisor Training"
   },
   {
+    quote: "Billy has been so great to work with at Reading Futures! He is responsive to questions and SUPER creative when problem-solving. He's built several tools for our organization to use, and we get great feedback on them from our clients.",
+    author: "Cary",
+    role: "Site Lead, Reading Futures"
+  },
+  {
     quote: "The team at Stupid Simple Apps just gets it. They listened to our problems and built a solution that works exactly how we work. No learning curve, no fuss.",
     author: "Michael Chen",
     role: "Operations Director, TechFlow"
