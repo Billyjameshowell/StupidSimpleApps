@@ -20,8 +20,10 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://x.com/billyjhowell"
                 className="text-primary-400 hover:text-white transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -33,8 +35,10 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/billy-howell-ab5253107"
                 className="text-primary-400 hover:text-white transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,8 +50,10 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="#"
+                href="https://github.com/billyjameshowell"
                 className="text-primary-400 hover:text-white transition"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
