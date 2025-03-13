@@ -1,12 +1,5 @@
-// constants.js
-export const COMPANY_ADDRESS = {
-  name: "Howell Advisors LLC",
-  street: "2300 Wilson Blvd Suite 700",
-  city: "Arlington, VA 22201",
-};
-
 import { Link } from "wouter";
-import { COMPANY_ADDRESS } from "./constants"; // Import the address constant
+import { COMPANY_ADDRESS } from "../constants"; // Import the address constant
 
 export default function Footer() {
   return (
