@@ -14,7 +14,7 @@ export default function SavingsCalculator() {
   ]);
   const [seats, setSeats] = useState<number>(20);
   const [savings, setSavings] = useState<number>(0);
-  const monthlyFlatFee = 250;
+  const monthlyFlatFee = 750;
 
   const addSubscription = () => {
     const newId = Date.now().toString();
@@ -158,7 +158,7 @@ export default function SavingsCalculator() {
               ${monthlyFlatFee}/month (unlimited users)
             </p>
             <p className="text-xs text-primary-500 mt-1">
-              *Flat fee could be higher or lower depending on the complexity of your app. New feature buildouts will be billed at a discounted rate.
+              *Typical plans start at $750, but costs may vary based on scope.
             </p>
           </div>
         </div>

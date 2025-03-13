@@ -192,14 +192,14 @@ export default function HowItWorksSection() {
                       One Flat Monthly Fee
                     </div>
                     <div className="font-bold text-lg text-[#2b6cb0]">
-                      $250/mo*
+                      $750/mo*
                     </div>
                   </div>
                   <div className="text-[#4299e1] text-sm mt-1">
                     No matter how many users
                   </div>
                   <div className="text-[#4299e1] text-xs mt-1">
-                    *Flat fee could be higher or lower depending on the complexity of your app. New feature buildouts will be billed at a discounted rate.
+                    *Typical plans start at $750, but costs may vary based on scope.
                   </div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-[#90cdf4]">
