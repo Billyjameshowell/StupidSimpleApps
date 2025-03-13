@@ -57,7 +57,8 @@ export default function ContactForm() {
     onError: (error) => {
       toast({
         title: "Something went wrong",
-        description: error instanceof Error ? error.message : "Please try again later.",
+        description:
+          error instanceof Error ? error.message : "Please try again later.",
         variant: "destructive",
         duration: 5000,
       });
@@ -70,10 +71,10 @@ export default function ContactForm() {
     setSubmitting(true);
 
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
+      const response = await fetch("/api/contact", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
@@ -89,15 +90,19 @@ export default function ContactForm() {
 
         // Redirect to Calendly after a brief delay
         setTimeout(() => {
-          window.open('https://calendly.com/billy-owex/stupid-simple-apps-intro-call', '_blank');
+          window.open(
+            "https://calendly.com/billy-owex/stupid-simple-apps-intro-call-1",
+            "_blank",
+          );
         }, 1500);
       } else {
-        throw new Error(result.error || 'Something went wrong');
+        throw new Error(result.error || "Something went wrong");
       }
     } catch (error) {
       toast({
         title: "Error",
-        description: error instanceof Error ? error.message : "Failed to send message",
+        description:
+          error instanceof Error ? error.message : "Failed to send message",
         variant: "destructive",
       });
     } finally {
@@ -113,12 +118,14 @@ export default function ContactForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm font-medium text-primary-700">Name</FormLabel>
+              <FormLabel className="text-sm font-medium text-primary-700">
+                Name
+              </FormLabel>
               <FormControl>
-                <Input 
-                  placeholder="Your name" 
-                  className="w-full px-3 py-2 border border-primary-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0ea5e9] focus:border-[#0ea5e9]" 
-                  {...field} 
+                <Input
+                  placeholder="Your name"
+                  className="w-full px-3 py-2 border border-primary-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0ea5e9] focus:border-[#0ea5e9]"
+                  {...field}
                 />
               </FormControl>
               <FormMessage />
@@ -131,13 +138,15 @@ export default function ContactForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm font-medium text-primary-700">Email</FormLabel>
+              <FormLabel className="text-sm font-medium text-primary-700">
+                Email
+              </FormLabel>
               <FormControl>
-                <Input 
-                  placeholder="you@company.com" 
-                  type="email" 
-                  className="w-full px-3 py-2 border border-primary-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0ea5e9] focus:border-[#0ea5e9]" 
-                  {...field} 
+                <Input
+                  placeholder="you@company.com"
+                  type="email"
+                  className="w-full px-3 py-2 border border-primary-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0ea5e9] focus:border-[#0ea5e9]"
+                  {...field}
                 />
               </FormControl>
               <FormMessage />
@@ -150,13 +159,15 @@ export default function ContactForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm font-medium text-primary-700">Tell us about your app needs</FormLabel>
+              <FormLabel className="text-sm font-medium text-primary-700">
+                Tell us about your app needs
+              </FormLabel>
               <FormControl>
-                <Textarea 
-                  placeholder="What problem are you trying to solve?" 
-                  rows={4} 
-                  className="w-full px-3 py-2 border border-primary-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0ea5e9] focus:border-[#0ea5e9]" 
-                  {...field} 
+                <Textarea
+                  placeholder="What problem are you trying to solve?"
+                  rows={4}
+                  className="w-full px-3 py-2 border border-primary-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#0ea5e9] focus:border-[#0ea5e9]"
+                  {...field}
                 />
               </FormControl>
               <FormMessage />
@@ -164,8 +175,8 @@ export default function ContactForm() {
           )}
         />
 
-        <Button 
-          type="submit" 
+        <Button
+          type="submit"
           className="w-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-medium py-2 px-4 rounded-md transition focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0ea5e9]"
           disabled={submitting}
         >
@@ -174,9 +185,9 @@ export default function ContactForm() {
 
         <div className="text-center mt-4">
           <span className="text-primary-600">or</span>
-          <a 
-            href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call" 
-            target="_blank" 
+          <a
+            href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call-1"
+            target="_blank"
             rel="noopener noreferrer"
             className="block mt-2 text-[#0ea5e9] font-medium hover:text-[#0284c7] transition"
           >
