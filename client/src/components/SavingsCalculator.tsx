@@ -157,6 +157,9 @@ export default function SavingsCalculator() {
             <p className="text-xs text-primary-500">
               ${monthlyFlatFee}/month (unlimited users)
             </p>
+            <p className="text-xs text-primary-500 mt-1">
+              *Flat fee could be higher or lower depending on the complexity of your app. New feature buildouts will be billed at a discounted rate.
+            </p>
           </div>
         </div>
 
