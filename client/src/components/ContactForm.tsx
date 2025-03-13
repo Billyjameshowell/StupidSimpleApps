@@ -16,6 +16,8 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { CALENDLY_URL } from "@/constants"; // Import CALENDLY_URL constant
+
 
 // Form validation schema
 const formSchema = z.object({
@@ -90,10 +92,7 @@ export default function ContactForm() {
 
         // Redirect to Calendly after a brief delay
         setTimeout(() => {
-          window.open(
-            "https://calendly.com/billy-owex/stupid-simple-apps-intro-call-1",
-            "_blank",
-          );
+          window.open(CALENDLY_URL, "_blank"); // Use CALENDLY_URL constant
         }, 1500);
       } else {
         throw new Error(result.error || "Something went wrong");
@@ -186,7 +185,7 @@ export default function ContactForm() {
         <div className="text-center mt-4">
           <span className="text-primary-600">or</span>
           <a
-            href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call-1"
+            href={CALENDLY_URL} // Use CALENDLY_URL constant
             target="_blank"
             rel="noopener noreferrer"
             className="block mt-2 text-[#0ea5e9] font-medium hover:text-[#0284c7] transition"

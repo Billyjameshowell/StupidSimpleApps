@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import ContactForm from "./ContactForm";
+import { CALENDLY_URL } from "@/constants";
 
 export default function ContactSection() {
   return (
@@ -82,6 +83,30 @@ export default function ContactSection() {
                   </a>
                 </div>
                 
+                <div className="flex items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-[#38bdf8] mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <a
+                    href={CALENDLY_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#7dd3fc] hover:text-[#bae6fd] transition"
+                  >
+                    Schedule a call
+                  </a>
+                </div>
               </div>
             </div>
           </div>
