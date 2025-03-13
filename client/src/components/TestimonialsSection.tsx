@@ -1,3 +1,4 @@
+
 import { Star } from "lucide-react";
 
 const testimonials = [
@@ -27,10 +28,10 @@ export default function TestimonialsSection() {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-[#1e293b] rounded-xl p-6 border border-[#334155] shadow-lg relative">
-              <div className="absolute -top-4 -left-4 text-4xl text-[#38bdf8]">"</div>
+              <div className="absolute -top-4 -left-4 w-8 h-8 flex items-center justify-center text-4xl text-[#38bdf8]">"</div>
               <div className="mb-4 text-[#38bdf8] flex">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" />
