@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { CALENDLY_URL } from "@/constants";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -52,7 +53,7 @@ export default function Header() {
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white"
             >
               <a
-                href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call-1"
+                href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -100,7 +101,7 @@ export default function Header() {
             Testimonials
           </a>
           <a
-            href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call-1"
+            href={CALENDLY_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="block py-2 px-2 bg-[#0ea5e9] text-white rounded text-center"

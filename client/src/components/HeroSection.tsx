@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { CALENDLY_URL } from "@/constants";
 
 export default function HeroSection() {
   return (
@@ -24,7 +25,7 @@ export default function HeroSection() {
                 className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-6 py-3 font-semibold"
               >
                 <a
-                  href="https://calendly.com/billy-owex/stupid-simple-apps-intro-call-1"
+                  href={CALENDLY_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
