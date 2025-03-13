@@ -14,7 +14,7 @@ export default function SavingsCalculator() {
   ]);
   const [seats, setSeats] = useState<number>(20);
   const [savings, setSavings] = useState<number>(0);
-  const monthlyFlatFee = 750;
+  const monthlyFlatFee = 250;
 
   const addSubscription = () => {
     const newId = Date.now().toString();

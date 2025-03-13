@@ -59,8 +59,11 @@ export default function HowItWorksSection() {
               Flat-Fee Support
             </h3>
             <p className="text-primary-600">
-              We maintain and update your app for a predictable monthly fee — no
+              We maintain and update your app for a predictable monthly fee of $250* — no
               matter how many people use it.
+            </p>
+            <p className="text-primary-500 text-xs mt-2">
+              *Flat fee could be higher or lower depending on the complexity of your app. New feature buildouts will be billed at a discounted rate.
             </p>
             <div className="absolute top-6 right-6 text-[#0ea5e9]">
               <Check className="h-6 w-6" />
@@ -118,7 +121,7 @@ export default function HowItWorksSection() {
                       Ongoing support included
                     </span>
                     <p className="text-primary-600 text-sm">
-                      No extra charges for updates or help when you need it.
+                      No extra charges for simple updates or help when you need it.
                     </p>
                   </div>
                 </li>
