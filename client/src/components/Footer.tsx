@@ -1,4 +1,12 @@
+// constants.js
+export const COMPANY_ADDRESS = {
+  name: "Howell Advisors LLC",
+  street: "2300 Wilson Blvd Suite 700",
+  city: "Arlington, VA 22201",
+};
+
 import { Link } from "wouter";
+import { COMPANY_ADDRESS } from "./constants"; // Import the address constant
 
 export default function Footer() {
   return (
@@ -118,11 +126,11 @@ export default function Footer() {
                   hello@stupid-simple-apps.com
                 </a>
               </li>
-              
+
               <li className="flex items-center">
                 <svg
+                  className="h-5 w-5 text-primary-400 mr-2 flex-shrink-0"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 mr-2 text-primary-400"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
@@ -141,9 +149,11 @@ export default function Footer() {
                   />
                 </svg>
                 <address className="not-italic hover:text-white transition">
-                  123 App Street, Suite 100
+                  {COMPANY_ADDRESS.name}
                   <br />
-                  San Francisco, CA 94103
+                  {COMPANY_ADDRESS.street}
+                  <br />
+                  {COMPANY_ADDRESS.city}
                 </address>
               </li>
             </ul>
