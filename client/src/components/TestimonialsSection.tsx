@@ -30,14 +30,14 @@ export default function TestimonialsSection() {
         
         <div className="grid md:grid-cols-2 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div key={index} className="bg-[#1e293b] rounded-xl p-6 border border-[#334155] shadow-lg relative">
-              <div className="absolute -top-4 -left-4 w-8 h-8 flex items-center justify-center text-4xl text-[#38bdf8]">"</div>
-              <div className="mb-4 text-[#38bdf8] flex">
+            <div key={index} className="bg-[#1e293b] rounded-xl p-8 border border-[#334155] shadow-lg relative">
+              <div className="absolute top-6 left-6 text-4xl leading-none text-[#38bdf8] font-serif">"</div>
+              <div className="mb-4 text-[#38bdf8] flex pt-4">
                 {[...Array(5)].map((_, i) => (
                   <Star key={i} className="h-5 w-5 fill-current" />
                 ))}
               </div>
-              <p className="text-white mb-6">
+              <p className="text-white mb-6 pl-4">
                 {testimonial.quote}
               </p>
               <div className="flex items-center">
