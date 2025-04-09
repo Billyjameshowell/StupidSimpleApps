@@ -76,13 +76,13 @@ export default function ContactSection() {
                     />
                   </svg>
                   <a
-                    href="mailto:billy@stupid-simple-apps.com"
+                    href="mailto:hello@stupid-simple-apps.com"
                     className="text-[#7dd3fc] hover:text-[#bae6fd] transition"
                   >
-                    billy@stupid-simple-apps.com
+                    hello@stupid-simple-apps.com
                   </a>
                 </div>
-                
+
                 <div className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
