@@ -96,7 +96,7 @@ export default function HubspotDashboard() {
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/dashboard-screenshot-1.png"
+                  src="/attached_assets/CleanShot 2025-03-07 at 14.36.30@2x.png"
                   alt="Share Embed visualization" 
                   className="w-full rounded-md"
                 />
@@ -127,7 +127,7 @@ export default function HubspotDashboard() {
               </ul>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/dashboard-screenshot-2.png"
+                  src="/attached_assets/CleanShot 2025-03-07 at 14.38.05@2x.png"
                   alt="Revenue Dashboard visualization" 
                   className="w-full rounded-md"
                 />
@@ -145,7 +145,7 @@ export default function HubspotDashboard() {
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/dashboard-screenshot-3.png"
+                  src="/attached_assets/CleanShot 2025-03-13 at 10.47.02@2x.png"
                   alt="HubSpot Dashboard integration" 
                   className="w-full rounded-md"
                 />
@@ -167,37 +167,37 @@ export default function HubspotDashboard() {
             <div className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-6">
               ⚙️ How It Works
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+              <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-3 sm:mb-4">
                   1
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
                   Connect Portal
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-sm sm:text-base text-gray-700">
                   We connect to your HubSpot portal (view-only or edit access)
                 </p>
               </div>
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-4">
+              <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-3 sm:mb-4">
                   2
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
                   Share KPI Needs
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-sm sm:text-base text-gray-700">
                   You tell us your KPIs and reporting needs
                 </p>
               </div>
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-4">
+              <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6 sm:col-span-2 md:col-span-1">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-3 sm:mb-4">
                   3
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
                   Get Dashboard
                 </h3>
-                <p className="text-gray-700">
+                <p className="text-sm sm:text-base text-gray-700">
                   We deliver a fully interactive dashboard in 5–7 days
                 </p>
               </div>
@@ -207,32 +207,32 @@ export default function HubspotDashboard() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-6">
               💸 Pricing
             </div>
             <div className="flex flex-col md:flex-row md:space-x-8 justify-center">
-              <div className="bg-white rounded-xl shadow-lg p-8 md:w-1/2 mb-8 md:mb-0">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 md:w-1/2 mb-6 md:mb-0">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
                   One-time Setup
                 </h3>
-                <div className="text-3xl font-bold text-gray-900 mb-4">
+                <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
                   One flat fee
                 </div>
-                <p className="text-gray-700 mb-4">
+                <p className="text-sm sm:text-base text-gray-700 mb-2 sm:mb-4">
                   Includes full dashboard build + embed setup
                 </p>
               </div>
-              <div className="bg-white rounded-xl shadow-lg p-8 md:w-1/2">
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+              <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 md:w-1/2">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">
                   Monthly Maintenance
                 </h3>
-                <div className="text-3xl font-bold text-gray-900 mb-4">
+                <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
                   $99/month
                 </div>
-                <p className="text-gray-700 mb-4">
+                <p className="text-sm sm:text-base text-gray-700 mb-2 sm:mb-4">
                   Hosting, updates, ongoing tweaks
                 </p>
               </div>
@@ -241,32 +241,7 @@ export default function HubspotDashboard() {
         </div>
       </section>
 
-      {/* Image Upload Info */}
-      <section className="py-12 bg-blue-50 border-t border-b border-blue-100">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                📸 How to Update Dashboard Screenshots
-              </h3>
-              <p className="text-gray-700 mb-4">
-                The current page uses placeholder images. To replace with actual HubSpot dashboard visualizations:
-              </p>
-              <ol className="space-y-2 text-gray-700 mb-6 list-decimal pl-5">
-                <li>Create screenshots of your actual HubSpot dashboards</li>
-                <li>Upload them to the <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">/attached_assets</code> folder</li>
-                <li>Update the image paths in <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">client/src/pages/HubspotDashboard.tsx</code></li>
-              </ol>
-              <div className="text-sm text-gray-500 bg-gray-50 p-3 rounded">
-                <p className="font-medium">Example image path:</p>
-                <code className="text-xs block mt-1 bg-gray-100 p-2 rounded">
-                  src="/attached_assets/your-hubspot-dashboard-screenshot.png"
-                </code>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Contact CTA */}
       <section id="contact" className="py-20 bg-orange-50">
@@ -278,13 +253,13 @@ export default function HubspotDashboard() {
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 sm:px-8 sm:py-6 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               <a
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center"
+                className="inline-flex items-center justify-center"
               >
                 Schedule a Call
                 <svg
