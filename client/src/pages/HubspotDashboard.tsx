@@ -7,19 +7,19 @@ export default function HubspotDashboard() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br from-white to-orange-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+      <section className="pt-20 pb-12 md:pt-36 md:pb-24 bg-gradient-to-br from-white to-orange-50">
+        <div className="container mx-auto px-6 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto px-4">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
               Custom HubSpot Visual Dashboards
             </h1>
-            <p className="text-2xl md:text-3xl text-gray-700 font-light mb-10">
+            <p className="text-xl md:text-3xl text-gray-700 font-light mb-10 px-2">
               Your pipeline. Crystal clear.
             </p>
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-4 sm:py-6 font-semibold text-base sm:text-lg w-[90%] sm:w-auto mx-auto"
             >
               <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                 Let's make your HubSpot data usable
