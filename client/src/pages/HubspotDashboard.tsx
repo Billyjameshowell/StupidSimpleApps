@@ -19,7 +19,7 @@ export default function HubspotDashboard() {
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 font-semibold text-base rounded-md w-auto"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-4 sm:py-6 font-semibold text-base sm:text-lg w-[90%] sm:w-auto mx-auto"
             >
               <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                 Let's make your HubSpot data usable
