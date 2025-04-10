@@ -16,29 +16,27 @@ export default function HubspotDashboard() {
             <p className="text-2xl md:text-3xl text-gray-700 font-light mb-10">
               Your pipeline. Crystal clear.
             </p>
-            <div className="inline-block">
-              <Button
-                asChild
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 md:px-8 md:py-6 font-semibold text-base md:text-lg whitespace-normal"
-              >
-                <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
-                  Let's make your HubSpot data usable
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2 flex-shrink-0"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </Button>
-            </div>
+            <Button
+              asChild
+              size="lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
+            >
+              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
+                Let's make your HubSpot data usable
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </a>
+            </Button>
           </div>
         </div>
       </section>
@@ -98,7 +96,7 @@ export default function HubspotDashboard() {
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/attached_assets/CleanShot 2025-03-07 at 14.36.30@2x.png"
+                  src="/dashboard-screenshot-1.png"
                   alt="Share Embed visualization" 
                   className="w-full rounded-md"
                 />
@@ -129,7 +127,7 @@ export default function HubspotDashboard() {
               </ul>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/attached_assets/CleanShot 2025-03-07 at 14.38.05@2x.png"
+                  src="/dashboard-screenshot-2.png"
                   alt="Revenue Dashboard visualization" 
                   className="w-full rounded-md"
                 />
@@ -147,7 +145,7 @@ export default function HubspotDashboard() {
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/attached_assets/CleanShot 2025-03-13 at 10.47.02@2x.png"
+                  src="/dashboard-screenshot-3.png"
                   alt="HubSpot Dashboard integration" 
                   className="w-full rounded-md"
                 />
@@ -243,7 +241,32 @@ export default function HubspotDashboard() {
         </div>
       </section>
 
-
+      {/* Image Upload Info */}
+      <section className="py-12 bg-blue-50 border-t border-b border-blue-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                📸 How to Update Dashboard Screenshots
+              </h3>
+              <p className="text-gray-700 mb-4">
+                The current page uses placeholder images. To replace with actual HubSpot dashboard visualizations:
+              </p>
+              <ol className="space-y-2 text-gray-700 mb-6 list-decimal pl-5">
+                <li>Create screenshots of your actual HubSpot dashboards</li>
+                <li>Upload them to the <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">/attached_assets</code> folder</li>
+                <li>Update the image paths in <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">client/src/pages/HubspotDashboard.tsx</code></li>
+              </ol>
+              <div className="text-sm text-gray-500 bg-gray-50 p-3 rounded">
+                <p className="font-medium">Example image path:</p>
+                <code className="text-xs block mt-1 bg-gray-100 p-2 rounded">
+                  src="/attached_assets/your-hubspot-dashboard-screenshot.png"
+                </code>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Contact CTA */}
       <section id="contact" className="py-20 bg-orange-50">
@@ -252,34 +275,32 @@ export default function HubspotDashboard() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               👋 Let's make your HubSpot data usable.
             </h2>
-            <div className="inline-block">
-              <Button
-                asChild
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 md:px-8 md:py-6 font-semibold text-base md:text-lg whitespace-normal"
+            <Button
+              asChild
+              size="lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
+            >
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
               >
-                <a
-                  href={CALENDLY_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center"
+                Schedule a Call
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5 ml-2"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
                 >
-                  Schedule a Call
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 ml-2 flex-shrink-0"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </a>
-              </Button>
-            </div>
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </a>
+            </Button>
           </div>
         </div>
       </section>
