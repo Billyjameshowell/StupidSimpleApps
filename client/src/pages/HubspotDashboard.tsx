@@ -94,10 +94,12 @@ export default function HubspotDashboard() {
               <p className="text-lg text-gray-700 mb-8">
                 → All embeddable on your site, Notion, or internal wiki.
               </p>
-              <div className="bg-gray-100 p-4 rounded-lg text-center">
-                <p className="text-gray-500 italic">
-                  [Share Embed screenshot]
-                </p>
+              <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="/attached_assets/CleanShot 2025-03-07 at 14.36.30@2x.png"
+                  alt="Share Embed visualization" 
+                  className="w-full rounded-md"
+                />
               </div>
             </div>
             
@@ -123,10 +125,12 @@ export default function HubspotDashboard() {
                   <span className="text-gray-700">What's possible (unweighted)</span>
                 </li>
               </ul>
-              <div className="bg-gray-100 p-4 rounded-lg text-center">
-                <p className="text-gray-500 italic">
-                  [Revenue Dashboard screenshot]
-                </p>
+              <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="/attached_assets/CleanShot 2025-03-07 at 14.38.05@2x.png"
+                  alt="Revenue Dashboard visualization" 
+                  className="w-full rounded-md"
+                />
               </div>
             </div>
             
@@ -139,10 +143,12 @@ export default function HubspotDashboard() {
                 No exports. No Frankensteining tools.
                 We use custom properties and dashboards directly in your HubSpot portal so your team gets accurate, live insights—where they already work.
               </p>
-              <div className="bg-gray-100 p-4 rounded-lg text-center">
-                <p className="text-gray-500 italic">
-                  [HubSpot Dashboard screenshot]
-                </p>
+              <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
+                <img 
+                  src="/attached_assets/CleanShot 2025-03-13 at 10.47.02@2x.png"
+                  alt="HubSpot Dashboard integration" 
+                  className="w-full rounded-md"
+                />
               </div>
             </div>
           </div>
@@ -229,6 +235,33 @@ export default function HubspotDashboard() {
                 <p className="text-gray-700 mb-4">
                   Hosting, updates, ongoing tweaks
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Image Upload Info */}
+      <section className="py-12 bg-blue-50 border-t border-b border-blue-100">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">
+                📸 How to Update Dashboard Screenshots
+              </h3>
+              <p className="text-gray-700 mb-4">
+                The current page uses placeholder images. To replace with actual HubSpot dashboard visualizations:
+              </p>
+              <ol className="space-y-2 text-gray-700 mb-6 list-decimal pl-5">
+                <li>Create screenshots of your actual HubSpot dashboards</li>
+                <li>Upload them to the <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">/attached_assets</code> folder</li>
+                <li>Update the image paths in <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">client/src/pages/HubspotDashboard.tsx</code></li>
+              </ol>
+              <div className="text-sm text-gray-500 bg-gray-50 p-3 rounded">
+                <p className="font-medium">Example image path:</p>
+                <code className="text-xs block mt-1 bg-gray-100 p-2 rounded">
+                  src="/attached_assets/your-hubspot-dashboard-screenshot.png"
+                </code>
               </div>
             </div>
           </div>
