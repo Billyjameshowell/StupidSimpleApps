@@ -48,6 +48,12 @@ export default function Header() {
             >
               Testimonials
             </a>
+            <Link 
+              href="/hubspot-dashboard"
+              className="text-orange-500 hover:text-orange-600 font-medium transition"
+            >
+              HubSpot Dashboards
+            </Link>
             <Button
               asChild
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white"
@@ -100,6 +106,13 @@ export default function Header() {
           >
             Testimonials
           </a>
+          <Link
+            href="/hubspot-dashboard"
+            className="block py-2 px-2 text-orange-500 hover:bg-orange-50 rounded"
+            onClick={closeMobileMenu}
+          >
+            HubSpot Dashboards
+          </Link>
           <a
             href={CALENDLY_URL}
             target="_blank"

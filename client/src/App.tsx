@@ -4,6 +4,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import HubspotDashboard from "@/pages/HubspotDashboard";
 import Layout from "@/components/Layout";
 
 function Router() {
@@ -11,6 +12,7 @@ function Router() {
     <Layout>
       <Switch>
         <Route path="/" component={Home} />
+        <Route path="/hubspot-dashboard" component={HubspotDashboard} />
         <Route component={NotFound} />
       </Switch>
     </Layout>
