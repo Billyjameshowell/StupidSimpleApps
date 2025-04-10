@@ -241,32 +241,7 @@ export default function HubspotDashboard() {
         </div>
       </section>
 
-      {/* Image Upload Info */}
-      <section className="py-12 bg-blue-50 border-t border-b border-blue-100">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-blue-100">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
-                📸 How to Update Dashboard Screenshots
-              </h3>
-              <p className="text-gray-700 mb-4">
-                The current page uses placeholder images. To replace with actual HubSpot dashboard visualizations:
-              </p>
-              <ol className="space-y-2 text-gray-700 mb-6 list-decimal pl-5">
-                <li>Create screenshots of your actual HubSpot dashboards</li>
-                <li>Upload them to the <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">/attached_assets</code> folder</li>
-                <li>Update the image paths in <code className="bg-gray-100 px-1 py-0.5 rounded text-sm">client/src/pages/HubspotDashboard.tsx</code></li>
-              </ol>
-              <div className="text-sm text-gray-500 bg-gray-50 p-3 rounded">
-                <p className="font-medium">Example image path:</p>
-                <code className="text-xs block mt-1 bg-gray-100 p-2 rounded">
-                  src="/attached_assets/your-hubspot-dashboard-screenshot.png"
-                </code>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Contact CTA */}
       <section id="contact" className="py-20 bg-orange-50">
