@@ -7,19 +7,19 @@ export default function HubspotDashboard() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="pt-20 pb-12 md:pt-36 md:pb-24 bg-gradient-to-br from-white to-orange-50">
-        <div className="container mx-auto px-6 sm:px-6 lg:px-8">
-          <div className="text-center max-w-4xl mx-auto px-4">
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+      <section className="pt-16 sm:pt-20 pb-12 md:pt-36 md:pb-24 bg-gradient-to-br from-white to-orange-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-4 sm:mb-6">
               Custom HubSpot Visual Dashboards
             </h1>
-            <p className="text-xl md:text-3xl text-gray-700 font-light mb-10 px-2">
+            <p className="text-lg sm:text-xl md:text-3xl text-gray-700 font-light mb-8 sm:mb-10">
               Your pipeline. Crystal clear.
             </p>
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-4 sm:py-6 font-semibold text-base sm:text-lg w-[90%] sm:w-auto mx-auto"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-8 py-3 sm:py-6 font-semibold text-base sm:text-lg w-full sm:w-auto"
             >
               <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                 Let's make your HubSpot data usable
@@ -62,15 +62,15 @@ export default function HubspotDashboard() {
       </div>
 
       {/* What You Get Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 sm:py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto mb-16">
+          <div className="max-w-3xl mx-auto">
             <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
               🔍 What You Get
             </div>
             
             {/* KPI Cards */}
-            <div className="bg-white rounded-xl shadow-lg p-8 mb-14">
+            <div className="bg-white rounded-xl shadow-lg p-4 sm:p-8 mb-8 sm:mb-14">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 📊 Visual KPI Cards (Embed Anywhere)
               </h3>
@@ -167,9 +167,9 @@ export default function HubspotDashboard() {
             <div className="inline-block px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium mb-6">
               ⚙️ How It Works
             </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="bg-white rounded-xl border border-gray-200 p-6">
-                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-8">
+              <div className="bg-white rounded-xl border border-gray-200 p-4 sm:p-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold mb-4">
                   1
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -213,8 +213,8 @@ export default function HubspotDashboard() {
             <div className="inline-block px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium mb-6">
               💸 Pricing
             </div>
-            <div className="flex flex-col md:flex-row md:space-x-8 justify-center">
-              <div className="bg-white rounded-xl shadow-lg p-8 md:w-1/2 mb-8 md:mb-0">
+            <div className="flex flex-col sm:flex-row sm:space-x-8 justify-center">
+              <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 sm:w-1/2 mb-4 sm:mb-0">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
                   One-time Setup
                 </h3>
