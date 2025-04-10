@@ -21,7 +21,7 @@ export default function HubspotDashboard() {
               size="lg"
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
             >
-              <a href="#contact" className="inline-flex items-center">
+              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
                 Let's make your HubSpot data usable
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
