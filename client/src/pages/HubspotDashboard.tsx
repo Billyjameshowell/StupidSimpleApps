@@ -96,7 +96,7 @@ export default function HubspotDashboard() {
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/attached_assets/CleanShot 2025-03-07 at 14.36.30@2x.png"
+                  src="/dashboard-screenshot-1.png"
                   alt="Share Embed visualization" 
                   className="w-full rounded-md"
                 />
@@ -127,7 +127,7 @@ export default function HubspotDashboard() {
               </ul>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/attached_assets/CleanShot 2025-03-07 at 14.38.05@2x.png"
+                  src="/dashboard-screenshot-2.png"
                   alt="Revenue Dashboard visualization" 
                   className="w-full rounded-md"
                 />
@@ -145,7 +145,7 @@ export default function HubspotDashboard() {
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
                 <img 
-                  src="/attached_assets/CleanShot 2025-03-13 at 10.47.02@2x.png"
+                  src="/dashboard-screenshot-3.png"
                   alt="HubSpot Dashboard integration" 
                   className="w-full rounded-md"
                 />
