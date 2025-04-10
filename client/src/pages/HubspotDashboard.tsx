@@ -244,27 +244,27 @@ export default function HubspotDashboard() {
       
 
       {/* Contact CTA */}
-      <section id="contact" className="py-20 bg-orange-50">
+      <section id="contact" className="py-12 sm:py-20 bg-orange-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 px-2">
               👋 Let's make your HubSpot data usable.
             </h2>
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
+              className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-4 sm:px-8 py-4 sm:py-6 font-semibold text-base sm:text-lg"
             >
               <a
                 href={CALENDLY_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center"
+                className="inline-flex items-center justify-center"
               >
                 Schedule a Call
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 ml-2"
+                  className="h-4 w-4 sm:h-5 sm:w-5 ml-2"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
