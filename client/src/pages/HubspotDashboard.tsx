@@ -19,9 +19,14 @@ export default function HubspotDashboard() {
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 md:px-8 md:py-6 font-semibold text-base md:text-lg w-full sm:w-auto inline-flex items-center justify-center"
             >
-              <a href={CALENDLY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center">
+              <a
+                href={CALENDLY_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
+              >
                 Let's make your HubSpot data usable
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,8 +54,9 @@ export default function HubspotDashboard() {
               ✅ Built for Revenue Teams Who Need Answers Fast
             </div>
             <p className="text-xl md:text-2xl text-gray-700">
-              Tired of messy reports and clunky filters in native HubSpot dashboards?
-              We build custom interactive revenue dashboards that actually tell you where you're pacing—no digging required.
+              Tired of messy reports and clunky filters in native HubSpot
+              dashboards? We build custom interactive revenue dashboards that
+              actually tell you where you're pacing—no digging required.
             </p>
           </div>
         </div>
@@ -68,15 +74,13 @@ export default function HubspotDashboard() {
             <div className="inline-block px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium mb-6">
               🔍 What You Get
             </div>
-            
+
             {/* KPI Cards */}
             <div className="bg-white rounded-xl shadow-lg p-8 mb-14">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 📊 Visual KPI Cards (Embed Anywhere)
               </h3>
-              <p className="text-lg text-gray-700 mb-6">
-                Quickly track:
-              </p>
+              <p className="text-lg text-gray-700 mb-6">Quickly track:</p>
               <ul className="space-y-3 mb-8">
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
@@ -84,25 +88,29 @@ export default function HubspotDashboard() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span className="text-gray-700">Weighted + Unweighted Pipeline Value</span>
+                  <span className="text-gray-700">
+                    Weighted + Unweighted Pipeline Value
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span className="text-gray-700">Pacing to Goal by Quarter</span>
+                  <span className="text-gray-700">
+                    Pacing to Goal by Quarter
+                  </span>
                 </li>
               </ul>
               <p className="text-lg text-gray-700 mb-8">
                 → All embeddable on your site, Notion, or internal wiki.
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
-                <img 
+                <img
                   src="/dashboard-screenshot-1.png"
-                  alt="Share Embed visualization" 
+                  alt="Share Embed visualization"
                   className="w-full rounded-md"
                 />
               </div>
             </div>
-            
+
             {/* Quarterly Pacing */}
             <div className="bg-white rounded-xl shadow-lg p-8 mb-14">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
@@ -118,35 +126,40 @@ export default function HubspotDashboard() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span className="text-gray-700">What's likely to close (weighted)</span>
+                  <span className="text-gray-700">
+                    What's likely to close (weighted)
+                  </span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 mr-2">•</span>
-                  <span className="text-gray-700">What's possible (unweighted)</span>
+                  <span className="text-gray-700">
+                    What's possible (unweighted)
+                  </span>
                 </li>
               </ul>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
-                <img 
+                <img
                   src="/dashboard-screenshot-2.png"
-                  alt="Revenue Dashboard visualization" 
+                  alt="Revenue Dashboard visualization"
                   className="w-full rounded-md"
                 />
               </div>
             </div>
-            
+
             {/* Built Inside HubSpot */}
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
                 🎯 Built Inside HubSpot
               </h3>
               <p className="text-lg text-gray-700 mb-6">
-                No exports. No Frankensteining tools.
-                We use custom properties and dashboards directly in your HubSpot portal so your team gets accurate, live insights—where they already work.
+                No exports. No Frankensteining tools. We use custom properties
+                and dashboards directly in your HubSpot portal so your team gets
+                accurate, live insights—where they already work.
               </p>
               <div className="bg-white p-4 rounded-lg shadow-md overflow-hidden">
-                <img 
+                <img
                   src="/dashboard-screenshot-3.png"
-                  alt="HubSpot Dashboard integration" 
+                  alt="HubSpot Dashboard integration"
                   className="w-full rounded-md"
                 />
               </div>
@@ -216,7 +229,7 @@ export default function HubspotDashboard() {
             <div className="flex flex-col md:flex-row md:space-x-8 justify-center">
               <div className="bg-white rounded-xl shadow-lg p-8 md:w-1/2 mb-8 md:mb-0">
                 <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  One-time Setup
+                  One-time Setup<span className="text-orange-500">*</span>
                 </h3>
                 <div className="text-3xl font-bold text-gray-900 mb-4">
                   One flat fee
@@ -230,18 +243,21 @@ export default function HubspotDashboard() {
                   Monthly Maintenance
                 </h3>
                 <div className="text-3xl font-bold text-gray-900 mb-4">
-                  $99/month
+                  $250/month
                 </div>
                 <p className="text-gray-700 mb-4">
                   Hosting, updates, ongoing tweaks
                 </p>
               </div>
             </div>
+            <div className="mt-10 text-center">
+              <p className="text-sm text-gray-600 max-w-2xl mx-auto">
+                <span className="font-semibold">*</span> We charge a one-time project fee for the initial dashboard build, then provide ongoing support, maintenance, and updates for the monthly fee. This lets you spread costs over time while ensuring your dashboards stay current and working perfectly.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      
 
       {/* Contact CTA */}
       <section id="contact" className="py-20 bg-orange-50">
@@ -250,32 +266,34 @@ export default function HubspotDashboard() {
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
               👋 Let's make your HubSpot data usable.
             </h2>
-            <Button
-              asChild
-              size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-6 font-semibold text-lg"
-            >
-              <a
-                href={CALENDLY_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center"
+            <div className="inline-block">
+              <Button
+                asChild
+                size="lg"
+                className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 md:px-8 md:py-6 font-semibold text-base md:text-lg whitespace-normal"
               >
-                Schedule a Call
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 ml-2"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
+                <a
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center"
                 >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </a>
-            </Button>
+                  Schedule a Call
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2 flex-shrink-0"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
