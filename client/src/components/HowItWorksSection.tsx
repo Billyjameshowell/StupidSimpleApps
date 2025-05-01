@@ -187,19 +187,36 @@ export default function HowItWorksSection() {
                   Our Approach
                 </h4>
                 <div className="bg-white rounded-lg p-4 border border-[#90cdf4]">
-                  <div className="flex justify-between items-center">
-                    <div className="text-[#2b6cb0] font-medium">
-                      One Flat Monthly Fee
+                  <div className="flex justify-between items-start">
+                    <div>
+                      <div className="text-[#2b6cb0] font-medium">
+                        One-time Project Fee<span className="text-orange-500">*</span>
+                      </div>
+                      <div className="text-[#4299e1] text-sm">
+                        For initial build
+                      </div>
                     </div>
                     <div className="font-bold text-lg text-[#2b6cb0]">
-                      $750/mo*
+                      Custom Quote
                     </div>
                   </div>
-                  <div className="text-[#4299e1] text-sm mt-1">
-                    No matter how many users
+                  <div className="mt-3 border-t border-[#90cdf4] pt-3">
+                    <div className="flex justify-between items-start">
+                      <div>
+                        <div className="text-[#2b6cb0] font-medium">
+                          Monthly Fee
+                        </div>
+                        <div className="text-[#4299e1] text-sm">
+                          No matter how many users
+                        </div>
+                      </div>
+                      <div className="font-bold text-lg text-[#2b6cb0]">
+                        $250/mo
+                      </div>
+                    </div>
                   </div>
-                  <div className="text-[#4299e1] text-xs mt-1">
-                    *Typical plans start at $750, but costs may vary based on scope.
+                  <div className="text-[#4299e1] text-xs mt-3">
+                    <span className="font-semibold text-orange-500">*</span> One-time project fee for initial development, then $250/month for ongoing maintenance and support.
                   </div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-[#90cdf4]">
