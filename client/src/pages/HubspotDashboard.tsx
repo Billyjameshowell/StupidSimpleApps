@@ -2,10 +2,20 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { CALENDLY_URL } from "@/constants";
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 
 export default function HubspotDashboard() {
   return (
     <div className="flex flex-col min-h-screen">
+      <SEO 
+        title="Custom HubSpot Dashboards | Stupid Simple Apps"
+        description="Get clear visualizations of your revenue pipeline with custom HubSpot dashboards. Quarterly pacing, pipeline forecasting, and visual KPIs."
+        ogTitle="HubSpot Dashboard Solutions | Stupid Simple Apps"
+        ogDescription="Transform your HubSpot data into clear, actionable dashboards. One-time project fee plus $250/month for maintenance."
+        twitterTitle="Custom HubSpot Dashboard Solutions"
+        twitterDescription="Get better insights from your HubSpot data with custom dashboards that show exactly what your revenue team needs to see."
+        canonicalUrl="https://stupidsimpleapps.com/hubspot-dashboard"
+      />
       {/* Hero Section */}
       <section className="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br from-white to-orange-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
