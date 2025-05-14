@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/constants";
+import { TALLY_FORM_URL } from "@/constants";
 
 export default function HeroSection() {
   return (
@@ -25,7 +25,7 @@ export default function HeroSection() {
                 className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white px-6 py-3 font-semibold"
               >
                 <a
-                  href={CALENDLY_URL}
+                  href={TALLY_FORM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

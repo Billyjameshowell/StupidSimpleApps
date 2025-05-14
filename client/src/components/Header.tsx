@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/constants";
+import { TALLY_FORM_URL } from "@/constants";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -59,11 +59,11 @@ export default function Header() {
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white"
             >
               <a
-                href={CALENDLY_URL}
+                href={TALLY_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Schedule a Call
+                Get Started
               </a>
             </Button>
           </nav>
