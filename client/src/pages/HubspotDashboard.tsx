@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/constants";
+import { TALLY_FORM_URL } from "@/constants";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 
@@ -32,7 +32,7 @@ export default function HubspotDashboard() {
               className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 md:px-8 md:py-6 font-semibold text-base md:text-lg w-full sm:w-auto inline-flex items-center justify-center"
             >
               <a
-                href={CALENDLY_URL}
+                href={TALLY_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center"
@@ -283,12 +283,12 @@ export default function HubspotDashboard() {
                 className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 md:px-8 md:py-6 font-semibold text-base md:text-lg whitespace-normal"
               >
                 <a
-                  href={CALENDLY_URL}
+                  href={TALLY_FORM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center"
                 >
-                  Schedule a Call
+                  Get Started
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 ml-2 flex-shrink-0"

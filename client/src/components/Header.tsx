@@ -114,13 +114,13 @@ export default function Header() {
             HubSpot Dashboards
           </Link>
           <a
-            href={CALENDLY_URL}
+            href={TALLY_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="block py-2 px-2 bg-[#0ea5e9] text-white rounded text-center"
             onClick={closeMobileMenu}
           >
-            Schedule a Call
+            Get Started
           </a>
         </div>
       </div>
