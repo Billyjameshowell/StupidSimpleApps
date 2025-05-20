@@ -13,7 +13,7 @@ const routes = [
   { url: '/hubspot-dashboard', changefreq: 'weekly', priority: 0.8 }
 ];
 
-// Function to generate sitemap
+// Function to generate sitemap (gzipped)
 export async function generateSitemap(): Promise<Buffer> {
   const smStream = new SitemapStream({ hostname: SITE_URL });
   const pipeline = smStream.pipe(createGzip());
@@ -33,6 +33,27 @@ export async function generateSitemap(): Promise<Buffer> {
   // Get the result as a Buffer
   const data = await streamToPromise(pipeline);
   return data;
+}
+
+// Function to generate uncompressed sitemap
+export async function generateUncompressedSitemap(): Promise<string> {
+  const smStream = new SitemapStream({ hostname: SITE_URL });
+  
+  // Add each route to the sitemap
+  routes.forEach(route => {
+    smStream.write({
+      url: route.url,
+      changefreq: route.changefreq as any,
+      priority: route.priority
+    });
+  });
+
+  // End the stream
+  smStream.end();
+
+  // Get the result as a string
+  const data = await streamToPromise(smStream);
+  return data.toString();
 }
 
 // Save sitemap to file
