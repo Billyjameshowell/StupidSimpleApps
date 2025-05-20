@@ -4,8 +4,15 @@ import { storage } from "./storage";
 import { insertContactSchema } from "@shared/schema";
 import { ZodError } from "zod";
 import { fromZodError } from "zod-validation-error";
+import { setupSitemapRoutes, createSitemapAtStartup } from "./sitemap";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Setup sitemap routes
+  setupSitemapRoutes(app);
+  
+  // Generate sitemap at startup
+  await createSitemapAtStartup();
+  
   // put application routes here
   // prefix all routes with /api
 
