@@ -12,6 +12,12 @@ export default function Home() {
       <SEO 
         title="Stupid Simple Apps | Custom App Design Agency"
         description="We build custom web apps that give your team clarity and control, with a straightforward pricing model - one-time project fee plus $250/month maintenance."
+        ogTitle="Stupid Simple Apps | App Development Solutions"
+        ogDescription="Custom, straightforward app solutions with clear pricing: one-time project fee plus $250/month. No complexity, just apps that work."
+        ogImage="/og-image.png"
+        twitterTitle="Stupid Simple Apps | Build Without Complexity"
+        twitterDescription="Get custom apps built without excessive features or per-user costs. One-time project fee plus $250/month for maintenance."
+        twitterImage="/og-image.png"
         canonicalUrl="https://stupidsimpleapps.com/"
       />
       <HeroSection />
