@@ -8,7 +8,7 @@ export default function AboutSection() {
             <div className="relative overflow-hidden rounded-3xl shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop"
-                alt="Team collaborating on software" 
+                alt="Professional team collaborating on custom web application development projects" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -17,7 +17,7 @@ export default function AboutSection() {
             <div className="inline-block px-3 py-1 bg-[#e0f2fe] text-[#0284c7] rounded-full text-sm font-medium">
               About Us
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-primary-900">We Believe in Simplicity</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-900">About Our Web App Development Agency</h2>
             <p className="text-lg text-primary-600">
               We started Stupid Simple Apps because we were tired of seeing businesses struggle with complicated software that did way more than they needed — at a premium price.
             </p>

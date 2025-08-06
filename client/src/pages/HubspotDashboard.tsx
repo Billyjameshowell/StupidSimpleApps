@@ -3,26 +3,28 @@ import { Button } from "@/components/ui/button";
 import { TALLY_FORM_URL, HUBSPOT_CALENDLY_URL } from "@/constants";
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
+import StructuredData, { hubspotDashboardSchema } from "@/components/StructuredData";
 import { Check, Calendar, BarChart2, Link as LinkIcon } from "lucide-react";
 
 export default function HubspotDashboard() {
   return (
     <div className="flex flex-col min-h-screen">
       <SEO 
-        title="Revenue Forecasting for Media Companies | Stupid Simple Apps"
-        description="Custom HubSpot dashboards built specifically for media companies selling sponsorships, newsletters, podcasts and more. Flight-date based forecasting."
-        ogTitle="HubSpot Dashboards for Media Companies | Stupid Simple Apps"
-        ogDescription="Revenue forecasting for media companies — finally built for how you actually sell. Flight-date based forecasting that works."
-        twitterTitle="Media Revenue Dashboards | Stupid Simple Apps"
-        twitterDescription="Custom HubSpot dashboards designed for media companies that sell sponsorships, newsletters, podcasts, and display ads."
+        title="HubSpot Dashboard Development for Media Companies | Stupid Simple Apps"
+        description="Custom HubSpot dashboard development for media revenue forecasting. Flight-date based analytics for sponsorships, newsletters, and podcast sales."
+        ogTitle="HubSpot Dashboard Development Services | Media Revenue Forecasting"
+        ogDescription="Professional HubSpot dashboard development for media companies. Flight-date revenue forecasting that works for your business model."
+        twitterTitle="HubSpot Dashboards for Media Companies | Revenue Forecasting"
+        twitterDescription="Custom HubSpot dashboard development with flight-date based revenue forecasting for media companies selling sponsorships and content."
         canonicalUrl="https://stupidsimpleapps.com/hubspot-dashboard"
       />
+      <StructuredData data={hubspotDashboardSchema} />
       {/* Hero Section */}
       <section className="pt-28 pb-16 md:pt-36 md:pb-24 bg-gradient-to-br from-white to-orange-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
-              REVENUE FORECASTING FOR MEDIA COMPANIES — FINALLY BUILT FOR HOW YOU ACTUALLY SELL.
+              HubSpot Dashboard Development for Media Companies — Revenue Forecasting Built for Your Business
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-3">
               HubSpot dashboards weren't made for media.
@@ -69,7 +71,7 @@ export default function HubspotDashboard() {
               {/* Left Column */}
               <div>
                 <h2 className="text-3xl font-bold text-orange-600 mb-10">
-                  BUILT FOR MEDIA REVENUE TEAMS
+                  HubSpot Dashboard Features for Media Revenue Teams
                 </h2>
                 
                 <div className="space-y-12">

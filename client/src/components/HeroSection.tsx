@@ -11,12 +11,11 @@ export default function HeroSection() {
               Stupid Simple Approach
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-900 leading-tight">
-              Custom Apps <span className="text-[#0ea5e9]">Without</span> The
-              Complexity
+              Custom Web App Development <span className="text-[#0ea5e9]">Without</span> The Complexity
             </h1>
             <p className="text-lg md:text-xl text-primary-600 max-w-lg">
               We build tailored apps for businesses who want to get stuff done
-              without excessive features or per-user costs.
+              without excessive features or per-user costs. Specializing in <a href="/hubspot-dashboard" className="text-[#0ea5e9] hover:underline">HubSpot dashboard development</a> and custom business solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -47,7 +46,7 @@ export default function HeroSection() {
             <div className="relative bg-white p-6 rounded-3xl shadow-xl border border-primary-200">
               <img
                 src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2600&auto=format&fit=crop"
-                alt="Simple app interface on a phone"
+                alt="Custom web application development dashboard interface showing clean, simple design"
                 className="rounded-lg w-full h-full object-cover shadow-md"
               />
               <div className="absolute -bottom-5 -right-5 bg-white rounded-2xl p-4 shadow-lg border border-primary-200">

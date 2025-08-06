@@ -7,7 +7,7 @@ export default function HowItWorksSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-4">
-            How We Build Your App
+            Custom Web App Development Process
           </h2>
           <p className="text-lg text-primary-600 max-w-2xl mx-auto">
             A straightforward process from idea to launch, with ongoing support
