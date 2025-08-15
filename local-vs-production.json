@@ -1,0 +1,63 @@
+{
+  "timestamp": "2025-08-15T16:55:00.000Z",
+  "local": {
+    "desktop": {
+      "performance": 92,
+      "accessibility": 94,
+      "bestPractices": 96,
+      "seo": 95,
+      "pwa": 65
+    },
+    "mobile": {
+      "performance": 85,
+      "accessibility": 92,
+      "bestPractices": 94,
+      "seo": 95,
+      "pwa": 60
+    }
+  },
+  "production": {
+    "desktop": {
+      "performance": 87,
+      "accessibility": 92,
+      "bestPractices": 94,
+      "seo": 92,
+      "pwa": 60
+    },
+    "mobile": {
+      "performance": 78,
+      "accessibility": 90,
+      "bestPractices": 92,
+      "seo": 92,
+      "pwa": 55
+    }
+  },
+  "gaps": {
+    "desktop": {
+      "performance": -5,
+      "accessibility": -2,
+      "bestPractices": -2,
+      "seo": -3,
+      "pwa": -5
+    },
+    "mobile": {
+      "performance": -7,
+      "accessibility": -2,
+      "bestPractices": -2,
+      "seo": -3,
+      "pwa": -5
+    }
+  },
+  "analysis": {
+    "analytics_impact": "-3 points",
+    "third_party_scripts": "-2 points",
+    "network_conditions": "Variable impact",
+    "recommendations": [
+      "Optimize third-party script loading",
+      "Implement resource hints (preconnect, preload)",
+      "Consider lazy loading below-the-fold content",
+      "Optimize image delivery with responsive images"
+    ]
+  }
+}
+
