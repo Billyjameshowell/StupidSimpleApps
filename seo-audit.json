@@ -86,12 +86,14 @@
   },
   "critical_files": {
     "robots_txt": {
-      "exists": false,
-      "recommendation": "Create a robots.txt file to guide search engine crawlers"
+      "exists": true,
+      "generated_at_build_time": true,
+      "recommendation": "The robots.txt file exists in the production environment but is not found in the source code. It appears to be generated at build time or by the hosting platform. Consider adding explicit configuration for robots.txt in the source code for better control and version tracking."
     },
     "sitemap_xml": {
-      "exists": false,
-      "recommendation": "Create a sitemap.xml file to help search engines discover and index all pages"
+      "exists": true,
+      "generated_at_build_time": true,
+      "recommendation": "The sitemap.xml file exists in the production environment but is not found in the source code. It appears to be generated at build time or by the hosting platform. Consider adding explicit configuration for sitemap.xml in the source code for better control and version tracking."
     }
   },
   "page_weight": {
@@ -100,14 +102,14 @@
     "recommendation": "Current meta tag weight is minimal, but adding proper SEO tags would increase it to approximately 1-2KB, which is still well within acceptable limits"
   },
   "summary": {
-    "critical_issues": 10,
+    "critical_issues": 8,
     "medium_issues": 3,
     "low_issues": 1,
     "recommendations": [
       "Add essential meta tags including description, robots, and canonical URL",
       "Implement Open Graph tags for better social media sharing",
       "Add structured data using JSON-LD for better search engine understanding",
-      "Create robots.txt and sitemap.xml files",
+      "Add explicit configuration for robots.txt and sitemap.xml in the source code for better control",
       "Ensure all images used for Open Graph have appropriate dimensions and file sizes"
     ]
   }
