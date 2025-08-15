@@ -1,0 +1,14 @@
+[
+  {
+    "timestamp": "2025-08-15T16:18:04.056Z",
+    "totalSizeKB": 405,
+    "jsSizeKB": 344,
+    "cssSizeKB": 61,
+    "largeChunks": [
+      {
+        "name": "index-iPXhqgJg.js",
+        "sizeKB": 344
+      }
+    ]
+  }
+]
