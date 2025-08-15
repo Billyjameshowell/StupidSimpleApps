@@ -58,19 +58,55 @@
       "details": {
         "components_memoized": [
           "Router",
-          "App"
+          "App",
+          "SavingsCalculator",
+          "Header",
+          "Layout"
         ],
         "files_modified": [
-          "client/src/App.tsx"
+          "client/src/App.tsx",
+          "client/src/components/SavingsCalculator.tsx",
+          "client/src/components/Header.tsx",
+          "client/src/components/Layout.tsx"
+        ]
+      }
+    },
+    {
+      "type": "fix_key_prop_issues",
+      "description": "Fixed key prop issues in components",
+      "details": {
+        "components_fixed": [
+          "ChartTooltipContent",
+          "ChartLegendContent"
+        ],
+        "files_modified": [
+          "client/src/components/ui/chart.tsx"
+        ]
+      }
+    },
+    {
+      "type": "fix_react_anti_patterns",
+      "description": "Fixed React anti-patterns",
+      "details": {
+        "anti_patterns_fixed": [
+          "Missing StrictMode",
+          "Non-null assertion on root element",
+          "Missing null check for root element"
+        ],
+        "files_modified": [
+          "client/src/main.tsx"
         ]
       }
     }
   ],
   "summary": {
-    "files_modified": 3,
+    "files_modified": 6,
     "console_logs_removed": 0,
     "unused_dependencies_removed": 14,
     "components_lazy_loaded": 2,
-    "components_memoized": 2
+    "components_memoized": 5,
+    "key_prop_issues_fixed": 2,
+    "react_anti_patterns_fixed": 3
   }
 }
+

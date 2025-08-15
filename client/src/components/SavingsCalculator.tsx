@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, memo, useCallback } from "react";
 import { Plus, Trash2 } from "lucide-react";
 
 type Subscription = {
@@ -7,7 +7,7 @@ type Subscription = {
   price: number;
 };
 
-export default function SavingsCalculator() {
+function SavingsCalculator() {
   const [subscriptions, setSubscriptions] = useState<Subscription[]>([
     { id: "1", name: "Project Management", price: 15 },
     { id: "2", name: "CRM", price: 25 },
@@ -16,26 +16,23 @@ export default function SavingsCalculator() {
   const [savings, setSavings] = useState<number>(0);
   const monthlyFlatFee = 750;
 
-  const addSubscription = () => {
+  const addSubscription = useCallback(() => {
     const newId = Date.now().toString();
-    setSubscriptions([...subscriptions, { id: newId, name: "", price: 0 }]);
-  };
+    setSubscriptions((prev) => [...prev, { id: newId, name: "", price: 0 }]);
+  }, []);
 
-  const removeSubscription = (id: string) => {
-    setSubscriptions(subscriptions.filter((sub) => sub.id !== id));
-  };
+  const removeSubscription = useCallback((id: string) => {
+    setSubscriptions((prev) => prev.filter((sub) => sub.id !== id));
+  }, []);
 
-  const updateSubscription = (
-    id: string,
-    field: "name" | "price",
-    value: string | number,
-  ) => {
-    setSubscriptions(
-      subscriptions.map((sub) =>
-        sub.id === id ? { ...sub, [field]: value } : sub,
-      ),
-    );
-  };
+  const updateSubscription = useCallback(
+    (id: string, field: "name" | "price", value: string | number) => {
+      setSubscriptions((prev) =>
+        prev.map((sub) => (sub.id === id ? { ...sub, [field]: value } : sub))
+      );
+    },
+    []
+  );
 
   const totalMonthlyPerPerson = subscriptions.reduce(
     (total, sub) => total + sub.price,
@@ -175,3 +172,5 @@ export default function SavingsCalculator() {
     </div>
   );
 }
+
+export default memo(SavingsCalculator);
