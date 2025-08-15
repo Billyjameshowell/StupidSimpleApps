@@ -1,0 +1,73 @@
+{
+  "totalImageCount": 6,
+  "totalSizeInMB": 1.82,
+  "largeImages": [
+    {
+      "path": "./attached_assets/CleanShot 2025-03-13 at 10.47.02@2x.png",
+      "sizeInKB": 190,
+      "hasLazyLoading": false
+    },
+    {
+      "path": "./attached_assets/CleanShot 2025-03-07 at 14.38.05@2x.png",
+      "sizeInKB": 158,
+      "hasLazyLoading": false
+    },
+    {
+      "path": "./generated-icon.png",
+      "sizeInKB": 229,
+      "hasLazyLoading": false
+    },
+    {
+      "path": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2600&auto=format&fit=crop",
+      "sizeInKB": 494,
+      "hasLazyLoading": false,
+      "isRemote": true
+    },
+    {
+      "path": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop",
+      "sizeInKB": 712,
+      "hasLazyLoading": false,
+      "isRemote": true
+    }
+  ],
+  "missingOptimizations": [
+    {
+      "path": "./attached_assets/CleanShot 2025-03-13 at 10.47.02@2x.png",
+      "sizeInKB": 190,
+      "hasLazyLoading": false,
+      "potentialSavingsKB": 95
+    },
+    {
+      "path": "./attached_assets/CleanShot 2025-03-07 at 14.38.05@2x.png",
+      "sizeInKB": 158,
+      "hasLazyLoading": false,
+      "potentialSavingsKB": 79
+    },
+    {
+      "path": "./generated-icon.png",
+      "sizeInKB": 229,
+      "hasLazyLoading": false,
+      "potentialSavingsKB": 115
+    }
+  ],
+  "potentialSavingsInMB": 0.28,
+  "inaccessibleDirectories": [],
+  "remoteImages": [
+    {
+      "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2600&auto=format&fit=crop",
+      "sizeInKB": 494,
+      "exists": true,
+      "hasLazyLoading": false,
+      "needsOptimization": false,
+      "potentialSavingsKB": 0
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop",
+      "sizeInKB": 712,
+      "exists": true,
+      "hasLazyLoading": false,
+      "needsOptimization": false,
+      "potentialSavingsKB": 0
+    }
+  ]
+}
