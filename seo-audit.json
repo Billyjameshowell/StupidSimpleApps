@@ -1,0 +1,115 @@
+{
+  "meta_tags": {
+    "missing": [
+      {
+        "tag": "meta name=\"description\"",
+        "importance": "high",
+        "description": "Missing meta description which is crucial for search engines to understand page content"
+      },
+      {
+        "tag": "meta name=\"keywords\"",
+        "importance": "medium",
+        "description": "Missing keywords meta tag (less important for modern SEO but still useful)"
+      },
+      {
+        "tag": "meta name=\"author\"",
+        "importance": "low",
+        "description": "Missing author meta tag"
+      },
+      {
+        "tag": "meta name=\"robots\"",
+        "importance": "high",
+        "description": "Missing robots meta tag to control search engine crawling behavior"
+      },
+      {
+        "tag": "link rel=\"canonical\"",
+        "importance": "high",
+        "description": "Missing canonical URL tag to prevent duplicate content issues"
+      }
+    ],
+    "duplicate": [],
+    "weight_impact": "Minimal - current meta tags add approximately 0.2KB to HTML"
+  },
+  "open_graph": {
+    "missing": [
+      {
+        "tag": "og:title",
+        "importance": "high",
+        "description": "Missing Open Graph title for social media sharing"
+      },
+      {
+        "tag": "og:description",
+        "importance": "high",
+        "description": "Missing Open Graph description for social media sharing"
+      },
+      {
+        "tag": "og:image",
+        "importance": "high",
+        "description": "Missing Open Graph image for social media sharing"
+      },
+      {
+        "tag": "og:url",
+        "importance": "high",
+        "description": "Missing Open Graph URL for social media sharing"
+      },
+      {
+        "tag": "og:type",
+        "importance": "medium",
+        "description": "Missing Open Graph content type"
+      }
+    ],
+    "oversized_images": []
+  },
+  "structured_data": {
+    "missing": [
+      {
+        "type": "Organization",
+        "importance": "high",
+        "description": "Missing organization schema markup"
+      },
+      {
+        "type": "WebSite",
+        "importance": "high",
+        "description": "Missing website schema markup"
+      },
+      {
+        "type": "WebPage",
+        "importance": "high",
+        "description": "Missing webpage schema markup"
+      },
+      {
+        "type": "BreadcrumbList",
+        "importance": "medium",
+        "description": "Missing breadcrumb schema markup"
+      }
+    ]
+  },
+  "critical_files": {
+    "robots_txt": {
+      "exists": false,
+      "recommendation": "Create a robots.txt file to guide search engine crawlers"
+    },
+    "sitemap_xml": {
+      "exists": false,
+      "recommendation": "Create a sitemap.xml file to help search engines discover and index all pages"
+    }
+  },
+  "page_weight": {
+    "meta_tags_over_5kb": [],
+    "total_meta_weight": "0.2KB",
+    "recommendation": "Current meta tag weight is minimal, but adding proper SEO tags would increase it to approximately 1-2KB, which is still well within acceptable limits"
+  },
+  "summary": {
+    "critical_issues": 10,
+    "medium_issues": 3,
+    "low_issues": 1,
+    "recommendations": [
+      "Add essential meta tags including description, robots, and canonical URL",
+      "Implement Open Graph tags for better social media sharing",
+      "Add structured data using JSON-LD for better search engine understanding",
+      "Create robots.txt and sitemap.xml files",
+      "Ensure all images used for Open Graph have appropriate dimensions and file sizes"
+    ]
+  }
+}
+
