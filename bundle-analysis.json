@@ -1,0 +1,113 @@
+{
+  "totalSize": 343623,
+  "totalSizeKB": 336,
+  "js": {
+    "totalSize": 278421,
+    "totalSizeKB": 272,
+    "chunks": [
+      {
+        "name": "index-DPRbT2ki.js",
+        "size": 278421,
+        "sizeKB": 272
+      }
+    ]
+  },
+  "css": {
+    "totalSize": 65202,
+    "totalSizeKB": 64,
+    "chunks": [
+      {
+        "name": "index-BaM8auRV.css",
+        "size": 65202,
+        "sizeKB": 64
+      }
+    ]
+  },
+  "largeChunks": [
+    {
+      "name": "index-DPRbT2ki.js",
+      "size": 278421,
+      "sizeKB": 272
+    }
+  ],
+  "timestamp": "2025-08-15T21:26:57.512Z",
+  "dependencies": {
+    "totalNodeModulesSizeKB": 364140,
+    "largestDependencies": [
+      {
+        "name": "react-icons",
+        "version": "^5.4.0",
+        "sizeKB": 84236
+      },
+      {
+        "name": "drizzle-kit",
+        "version": "^0.30.4",
+        "sizeKB": 25876
+      },
+      {
+        "name": "lucide-react",
+        "version": "^0.453.0",
+        "sizeKB": 25166
+      },
+      {
+        "name": "date-fns",
+        "version": "^3.6.0",
+        "sizeKB": 23467
+      },
+      {
+        "name": "vite",
+        "version": "^5.4.14",
+        "sizeKB": 22299
+      },
+      {
+        "name": "typescript",
+        "version": "5.6.3",
+        "sizeKB": 21958
+      },
+      {
+        "name": "tsx",
+        "version": "^4.19.1",
+        "sizeKB": 20052
+      },
+      {
+        "name": "esbuild",
+        "version": "^0.25.0",
+        "sizeKB": 10129
+      },
+      {
+        "name": "drizzle-orm",
+        "version": "^0.39.1",
+        "sizeKB": 8905
+      },
+      {
+        "name": "tailwindcss",
+        "version": "^3.4.14",
+        "sizeKB": 5686
+      }
+    ]
+  },
+  "optimizationOpportunities": [
+    {
+      "type": "large_js_bundle",
+      "description": "The JavaScript bundle is larger than 250KB. Consider code splitting or lazy loading.",
+      "severity": "high"
+    },
+    {
+      "type": "large_dependencies",
+      "description": "Found 10 dependencies larger than 100KB. Consider alternatives or lazy loading.",
+      "severity": "medium",
+      "dependencies": [
+        "react-icons",
+        "drizzle-kit",
+        "lucide-react",
+        "date-fns",
+        "vite",
+        "typescript",
+        "tsx",
+        "esbuild",
+        "drizzle-orm",
+        "tailwindcss"
+      ]
+    }
+  ]
+}
