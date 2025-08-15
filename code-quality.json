@@ -1,0 +1,170 @@
+{
+  "summary": {
+    "total_files_analyzed": 63,
+    "total_files_failed": 0,
+    "total_issues_found": 58
+  },
+  "issues": {
+    "console_logs": {
+      "count": 0,
+      "files": []
+    },
+    "missing_memo": {
+      "count": 22,
+      "files": [
+        {
+          "path": "client/src/App.tsx",
+          "count": 2
+        },
+        {
+          "path": "client/src/components/ClientsSection.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ContactForm.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ContactSection.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/Footer.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/Header.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/HeroSection.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/HowItWorksSection.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/Layout.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/SavingsCalculator.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/TestimonialsSection.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/badge.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/calendar.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/command.tsx",
+          "count": 2
+        },
+        {
+          "path": "client/src/components/ui/context-menu.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/dropdown-menu.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/menubar.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/skeleton.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/toaster.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/pages/not-found.tsx",
+          "count": 1
+        }
+      ]
+    },
+    "key_prop_issues": {
+      "count": 1,
+      "files": [
+        {
+          "path": "client/src/components/ui/chart.tsx",
+          "count": 1
+        }
+      ]
+    },
+    "react_anti_patterns": {
+      "count": 4,
+      "files": [
+        {
+          "path": "client/src/components/ClientsSection.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/TestimonialsSection.tsx",
+          "count": 2
+        },
+        {
+          "path": "client/src/main.tsx",
+          "count": 1
+        }
+      ]
+    },
+    "unnecessary_rerenders": {
+      "count": 31,
+      "files": [
+        {
+          "path": "client/src/components/ContactForm.tsx",
+          "count": 2
+        },
+        {
+          "path": "client/src/components/Header.tsx",
+          "count": 5
+        },
+        {
+          "path": "client/src/components/SavingsCalculator.tsx",
+          "count": 6
+        },
+        {
+          "path": "client/src/components/ui/calendar.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/carousel.tsx",
+          "count": 4
+        },
+        {
+          "path": "client/src/components/ui/chart.tsx",
+          "count": 4
+        },
+        {
+          "path": "client/src/components/ui/form.tsx",
+          "count": 2
+        },
+        {
+          "path": "client/src/components/ui/progress.tsx",
+          "count": 1
+        },
+        {
+          "path": "client/src/components/ui/sidebar.tsx",
+          "count": 5
+        },
+        {
+          "path": "client/src/components/ui/toggle-group.tsx",
+          "count": 1
+        }
+      ]
+    },
+    "failed_analysis": []
+  }
+}
