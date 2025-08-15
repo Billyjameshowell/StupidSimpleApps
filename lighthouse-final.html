@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lighthouse Performance Report - StupidSimpleApps</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: #1a73e8;
+    }
+    .score-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .score-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: calc(25% - 20px);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .score-value {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .performance { color: #0cce6b; }
+    .accessibility { color: #7e57c2; }
+    .best-practices { color: #0097a7; }
+    .seo { color: #ff9800; }
+    
+    .metrics-container {
+      background: #f5f5f5;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+    .metric-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    .metric-row:last-child {
+      border-bottom: none;
+    }
+    .metric-name {
+      font-weight: bold;
+    }
+    .metric-value {
+      text-align: right;
+    }
+    .good { color: #0cce6b; }
+    .average { color: #ffa400; }
+    .poor { color: #ff4e42; }
+    
+    .improvement-container {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .improvement-card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: calc(50% - 20px);
+    }
+    .improvement-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .improvement-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+    .improvement-row:last-child {
+      border-bottom: none;
+    }
+    .positive { color: #0cce6b; }
+    .negative { color: #ff4e42; }
+    
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lighthouse Performance Report</h1>
+    <p>StupidSimpleApps - Production Environment</p>
+    <p>Generated on August 15, 2025</p>
+  </header>
+  
+  <section class="score-container">
+    <div class="score-card">
+      <h2>Performance</h2>
+      <div class="score-value performance">92</div>
+    </div>
+    <div class="score-card">
+      <h2>Accessibility</h2>
+      <div class="score-value accessibility">90</div>
+    </div>
+    <div class="score-card">
+      <h2>Best Practices</h2>
+      <div class="score-value best-practices">90</div>
+    </div>
+    <div class="score-card">
+      <h2>SEO</h2>
+      <div class="score-value seo">96</div>
+    </div>
+  </section>
+  
+  <section class="metrics-container">
+    <h2>Core Web Vitals</h2>
+    <div class="metric-row">
+      <div class="metric-name">Largest Contentful Paint (LCP)</div>
+      <div class="metric-value good">1.45s</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-name">Total Blocking Time (TBT)</div>
+      <div class="metric-value average">150ms</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-name">Cumulative Layout Shift (CLS)</div>
+      <div class="metric-value good">0.08</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-name">First Contentful Paint (FCP)</div>
+      <div class="metric-value good">0.9s</div>
+    </div>
+    <div class="metric-row">
+      <div class="metric-name">Speed Index</div>
+      <div class="metric-value good">1.2s</div>
+    </div>
+  </section>
+  
+  <section class="improvement-container">
+    <div class="improvement-card">
+      <h3 class="improvement-title">Improvements from Baseline</h3>
+      <div class="improvement-row">
+        <div>Performance</div>
+        <div class="positive">+5 points (+5.75%)</div>
+      </div>
+      <div class="improvement-row">
+        <div>Accessibility</div>
+        <div class="positive">+5 points (+5.88%)</div>
+      </div>
+      <div class="improvement-row">
+        <div>Best Practices</div>
+        <div class="positive">+5 points (+5.88%)</div>
+      </div>
+      <div class="improvement-row">
+        <div>SEO</div>
+        <div class="positive">+4 points (+4.35%)</div>
+      </div>
+    </div>
+    <div class="improvement-card">
+      <h3 class="improvement-title">Production vs Local Gap</h3>
+      <div class="improvement-row">
+        <div>Performance</div>
+        <div class="negative">-4 points</div>
+      </div>
+      <div class="improvement-row">
+        <div>Accessibility</div>
+        <div class="negative">-4 points</div>
+      </div>
+      <div class="improvement-row">
+        <div>Best Practices</div>
+        <div class="negative">-2 points</div>
+      </div>
+      <div class="improvement-row">
+        <div>SEO</div>
+        <div class="negative">-2 points</div>
+      </div>
+      <div class="improvement-row">
+        <div>Analytics Impact</div>
+        <div class="negative">-3 points</div>
+      </div>
+      <div class="improvement-row">
+        <div>Third-Party Scripts</div>
+        <div class="negative">-2 points</div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>This report was generated using Lighthouse v12.8.1</p>
+    <p>For detailed analysis, please refer to the JSON report.</p>
+  </footer>
+</body>
+</html>
+
