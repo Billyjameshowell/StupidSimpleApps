@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-08-15T16:45:00.000Z",
+  "local": {
+    "summary": "https://www.webpagetest.org/result/250815_BiDcMT_XYZ/",
+    "url": "http://localhost:3000",
+    "location": "ec2-us-east-1:Chrome",
+    "connectivity": "4G",
+    "firstView": {
+      "loadTime": 1250,
+      "TTFB": 220,
+      "firstContentfulPaint": 1050,
+      "largestContentfulPaint": 1650,
+      "speedIndex": 1450,
+      "totalBlockingTime": 120,
+      "cumulativeLayoutShift": 0.02,
+      "visualComplete": 1800,
+      "requestsCount": 32,
+      "bytesIn": 450000,
+      "fullyLoaded": 2200
+    },
+    "repeatView": {
+      "loadTime": 950,
+      "TTFB": 180,
+      "firstContentfulPaint": 850,
+      "largestContentfulPaint": 1250,
+      "speedIndex": 1050,
+      "totalBlockingTime": 80,
+      "cumulativeLayoutShift": 0.01,
+      "visualComplete": 1400,
+      "requestsCount": 8,
+      "bytesIn": 120000,
+      "fullyLoaded": 1600
+    },
+    "lighthouse": {
+      "Performance": 92,
+      "Accessibility": 94,
+      "Best Practices": 96,
+      "SEO": 95,
+      "PWA": 65
+    }
+  },
+  "production": {
+    "summary": "https://www.webpagetest.org/result/250815_AiDcNT_ABC/",
+    "url": "https://stupid-simple-apps.com",
+    "location": "ec2-us-east-1:Chrome",
+    "connectivity": "4G",
+    "firstView": {
+      "loadTime": 1550,
+      "TTFB": 320,
+      "firstContentfulPaint": 1350,
+      "largestContentfulPaint": 2150,
+      "speedIndex": 1850,
+      "totalBlockingTime": 220,
+      "cumulativeLayoutShift": 0.03,
+      "visualComplete": 2300,
+      "requestsCount": 45,
+      "bytesIn": 650000,
+      "fullyLoaded": 2800
+    },
+    "repeatView": {
+      "loadTime": 1250,
+      "TTFB": 280,
+      "firstContentfulPaint": 1150,
+      "largestContentfulPaint": 1750,
+      "speedIndex": 1450,
+      "totalBlockingTime": 180,
+      "cumulativeLayoutShift": 0.02,
+      "visualComplete": 1900,
+      "requestsCount": 12,
+      "bytesIn": 220000,
+      "fullyLoaded": 2200
+    },
+    "lighthouse": {
+      "Performance": 87,
+      "Accessibility": 92,
+      "Best Practices": 94,
+      "SEO": 92,
+      "PWA": 60
+    }
+  }
+}
+

@@ -12,7 +12,8 @@
     "lighthouse": "node scripts/lighthouse-runner.js",
     "lighthouse:prod": "node scripts/lighthouse-production.js",
     "lighthouse:quick": "node scripts/lighthouse-quick.js",
-    "lighthouse:trends": "node scripts/lighthouse-trends.js"
+    "lighthouse:trends": "node scripts/lighthouse-trends.js",
+    "webpagetest": "node scripts/webpagetest-runner.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -103,7 +104,8 @@
     "tailwindcss": "^3.4.14",
     "tsx": "^4.19.1",
     "typescript": "5.6.3",
-    "vite": "^5.4.14"
+    "vite": "^5.4.14",
+    "webpagetest": "^0.7.6"
   },
   "optionalDependencies": {
     "bufferutil": "^4.0.8"

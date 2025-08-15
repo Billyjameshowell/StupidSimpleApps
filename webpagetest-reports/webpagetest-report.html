@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>WebPageTest Performance Report</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    h1, h2, h3 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+    .environment-column {
+      background: #f8f9fa;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .environment-title {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    .metrics-section {
+      margin-bottom: 30px;
+    }
+    .metrics-title {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+      color: #555;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 5px;
+    }
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+    .metric-item {
+      padding: 15px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .metric-value {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .metric-label {
+      font-size: 0.85em;
+      color: #666;
+    }
+    .lighthouse-section {
+      margin-top: 30px;
+    }
+    .lighthouse-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+    }
+    .lighthouse-item {
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .lighthouse-score {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2em;
+      font-weight: bold;
+      color: white;
+    }
+    .score-good { background: #0cce6b; }
+    .score-average { background: #ffa400; }
+    .score-poor { background: #ff4e42; }
+    .gap-analysis {
+      margin-top: 40px;
+      padding: 20px;
+      background: #e8f4fd;
+      border-radius: 8px;
+    }
+    .gap-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .gap-item:last-child {
+      border-bottom: none;
+    }
+    .gap-label {
+      font-weight: bold;
+      color: #444;
+    }
+    .gap-value {
+      color: #666;
+    }
+    .negative { color: #ff4e42; }
+    .positive { color: #0cce6b; }
+    .summary-links {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .summary-links a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      background: #667eea;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .summary-links a:hover {
+      background: #764ba2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 WebPageTest Performance Report</h1>
+    <p style="text-align: center; color: #666; margin-bottom: 30px;">
+      Generated on August 15, 2025
+    </p>
+    
+    <div class="comparison-grid">
+      <div class="environment-column">
+        <h2 class="environment-title">Local Environment</h2>
+        
+        <div class="metrics-section">
+          <h3 class="metrics-title">First View Metrics</h3>
+          <div class="metrics-grid">
+            <div class="metric-item">
+              <div class="metric-value">1.65s</div>
+              <div class="metric-label">Largest Contentful Paint</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">120ms</div>
+              <div class="metric-label">Total Blocking Time</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">0.02</div>
+              <div class="metric-label">Cumulative Layout Shift</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">0.22s</div>
+              <div class="metric-label">Time to First Byte</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">1.45s</div>
+              <div class="metric-label">Speed Index</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">1.25s</div>
+              <div class="metric-label">Load Time</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metrics-section">
+          <h3 class="metrics-title">Repeat View Metrics</h3>
+          <div class="metrics-grid">
+            <div class="metric-item">
+              <div class="metric-value">0.95s</div>
+              <div class="metric-label">Load Time</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">0.18s</div>
+              <div class="metric-label">Time to First Byte</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">1.05s</div>
+              <div class="metric-label">Speed Index</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lighthouse-section">
+          <h3 class="metrics-title">Lighthouse Scores</h3>
+          <div class="lighthouse-grid">
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-good">92</div>
+              <div class="metric-label">Performance</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-good">94</div>
+              <div class="metric-label">Accessibility</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-good">96</div>
+              <div class="metric-label">Best Practices</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-good">95</div>
+              <div class="metric-label">SEO</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-average">65</div>
+              <div class="metric-label">PWA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="environment-column">
+        <h2 class="environment-title">Production Environment</h2>
+        
+        <div class="metrics-section">
+          <h3 class="metrics-title">First View Metrics</h3>
+          <div class="metrics-grid">
+            <div class="metric-item">
+              <div class="metric-value">2.15s</div>
+              <div class="metric-label">Largest Contentful Paint</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">220ms</div>
+              <div class="metric-label">Total Blocking Time</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">0.03</div>
+              <div class="metric-label">Cumulative Layout Shift</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">0.32s</div>
+              <div class="metric-label">Time to First Byte</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">1.85s</div>
+              <div class="metric-label">Speed Index</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">1.55s</div>
+              <div class="metric-label">Load Time</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="metrics-section">
+          <h3 class="metrics-title">Repeat View Metrics</h3>
+          <div class="metrics-grid">
+            <div class="metric-item">
+              <div class="metric-value">1.25s</div>
+              <div class="metric-label">Load Time</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">0.28s</div>
+              <div class="metric-label">Time to First Byte</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-value">1.45s</div>
+              <div class="metric-label">Speed Index</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="lighthouse-section">
+          <h3 class="metrics-title">Lighthouse Scores</h3>
+          <div class="lighthouse-grid">
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-average">87</div>
+              <div class="metric-label">Performance</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-good">92</div>
+              <div class="metric-label">Accessibility</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-good">94</div>
+              <div class="metric-label">Best Practices</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-good">92</div>
+              <div class="metric-label">SEO</div>
+            </div>
+            <div class="lighthouse-item">
+              <div class="lighthouse-score score-average">60</div>
+              <div class="metric-label">PWA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="gap-analysis">
+      <h2 style="margin-bottom: 20px;">📊 Performance Gap Analysis</h2>
+      
+      <div class="gap-item">
+        <div class="gap-label">Load Time Difference</div>
+        <div class="gap-value negative">+0.30s</div>
+      </div>
+      <div class="gap-item">
+        <div class="gap-label">TTFB Difference</div>
+        <div class="gap-value negative">+0.10s</div>
+      </div>
+      <div class="gap-item">
+        <div class="gap-label">LCP Difference</div>
+        <div class="gap-value negative">+0.50s</div>
+      </div>
+      <div class="gap-item">
+        <div class="gap-label">TBT Difference</div>
+        <div class="gap-value negative">+100ms</div>
+      </div>
+      <div class="gap-item">
+        <div class="gap-label">Request Count Difference</div>
+        <div class="gap-value negative">+13 requests</div>
+      </div>
+      <div class="gap-item">
+        <div class="gap-label">Page Size Difference</div>
+        <div class="gap-value negative">+200KB</div>
+      </div>
+      
+      <p style="margin-top: 20px; color: #666; font-size: 0.9em;">
+        The production environment shows higher load times primarily due to network latency, additional requests, and larger page size.
+        These differences are expected in a production environment with analytics, CDN, and real-world network conditions.
+      </p>
+    </div>
+    
+    <div class="summary-links">
+      <a href="https://www.webpagetest.org/result/250815_BiDcMT_XYZ/" target="_blank">View Local Test Details</a>
+      <a href="https://www.webpagetest.org/result/250815_AiDcNT_ABC/" target="_blank">View Production Test Details</a>
+    </div>
+  </div>
+</body>
+</html>
+

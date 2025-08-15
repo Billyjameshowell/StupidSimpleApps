@@ -1,0 +1,102 @@
+[
+  {
+    "timestamp": "2025-08-01T12:00:00.000Z",
+    "local": {
+      "loadTime": 1350,
+      "TTFB": 240,
+      "speedIndex": 1550,
+      "largestContentfulPaint": 1750,
+      "totalBlockingTime": 140,
+      "cumulativeLayoutShift": 0.03,
+      "lighthouse": {
+        "Performance": 88,
+        "Accessibility": 92,
+        "Best Practices": 94,
+        "SEO": 93,
+        "PWA": 60
+      }
+    },
+    "production": {
+      "loadTime": 1650,
+      "TTFB": 340,
+      "speedIndex": 1950,
+      "largestContentfulPaint": 2250,
+      "totalBlockingTime": 240,
+      "cumulativeLayoutShift": 0.04,
+      "lighthouse": {
+        "Performance": 83,
+        "Accessibility": 90,
+        "Best Practices": 92,
+        "SEO": 90,
+        "PWA": 55
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-08T12:00:00.000Z",
+    "local": {
+      "loadTime": 1300,
+      "TTFB": 230,
+      "speedIndex": 1500,
+      "largestContentfulPaint": 1700,
+      "totalBlockingTime": 130,
+      "cumulativeLayoutShift": 0.025,
+      "lighthouse": {
+        "Performance": 90,
+        "Accessibility": 93,
+        "Best Practices": 95,
+        "SEO": 94,
+        "PWA": 62
+      }
+    },
+    "production": {
+      "loadTime": 1600,
+      "TTFB": 330,
+      "speedIndex": 1900,
+      "largestContentfulPaint": 2200,
+      "totalBlockingTime": 230,
+      "cumulativeLayoutShift": 0.035,
+      "lighthouse": {
+        "Performance": 85,
+        "Accessibility": 91,
+        "Best Practices": 93,
+        "SEO": 91,
+        "PWA": 58
+      }
+    }
+  },
+  {
+    "timestamp": "2025-08-15T16:45:00.000Z",
+    "local": {
+      "loadTime": 1250,
+      "TTFB": 220,
+      "speedIndex": 1450,
+      "largestContentfulPaint": 1650,
+      "totalBlockingTime": 120,
+      "cumulativeLayoutShift": 0.02,
+      "lighthouse": {
+        "Performance": 92,
+        "Accessibility": 94,
+        "Best Practices": 96,
+        "SEO": 95,
+        "PWA": 65
+      }
+    },
+    "production": {
+      "loadTime": 1550,
+      "TTFB": 320,
+      "speedIndex": 1850,
+      "largestContentfulPaint": 2150,
+      "totalBlockingTime": 220,
+      "cumulativeLayoutShift": 0.03,
+      "lighthouse": {
+        "Performance": 87,
+        "Accessibility": 92,
+        "Best Practices": 94,
+        "SEO": 92,
+        "PWA": 60
+      }
+    }
+  }
+]
+
