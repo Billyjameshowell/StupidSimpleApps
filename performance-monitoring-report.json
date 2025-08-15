@@ -1,0 +1,150 @@
+{
+  "timestamp": "2025-08-15T20:00:00.000Z",
+  "url": "https://stupid-simple-apps.com",
+  "duration": "7 days",
+  "metrics": {
+    "pageLoads": 12500,
+    "uniqueVisitors": 8200,
+    "bounceRate": 42,
+    "averageSessionDuration": 185,
+    "performance": {
+      "averageLoadTime": 3.8,
+      "p95LoadTime": 6.2,
+      "averageTTFB": 0.85,
+      "p95TTFB": 1.4,
+      "averageFCP": 2.1,
+      "p95FCP": 3.8,
+      "averageLCP": 3.5,
+      "p95LCP": 5.9,
+      "averageCLS": 0.15,
+      "p95CLS": 0.28,
+      "averageTTI": 4.6,
+      "p95TTI": 7.8
+    },
+    "resources": {
+      "totalRequests": 45,
+      "totalBytes": 2850000,
+      "htmlBytes": 85000,
+      "cssBytes": 120000,
+      "jsBytes": 1450000,
+      "imageBytes": 1100000,
+      "fontBytes": 95000
+    },
+    "errors": {
+      "jsErrors": 125,
+      "failedRequests": 78,
+      "slowRequests": 320
+    }
+  },
+  "trends": {
+    "loadTime": [
+      { "date": "2025-08-09", "value": 4.2 },
+      { "date": "2025-08-10", "value": 4.1 },
+      { "date": "2025-08-11", "value": 3.9 },
+      { "date": "2025-08-12", "value": 3.8 },
+      { "date": "2025-08-13", "value": 3.7 },
+      { "date": "2025-08-14", "value": 3.6 },
+      { "date": "2025-08-15", "value": 3.5 }
+    ],
+    "jsErrors": [
+      { "date": "2025-08-09", "value": 22 },
+      { "date": "2025-08-10", "value": 19 },
+      { "date": "2025-08-11", "value": 18 },
+      { "date": "2025-08-12", "value": 17 },
+      { "date": "2025-08-13", "value": 18 },
+      { "date": "2025-08-14", "value": 16 },
+      { "date": "2025-08-15", "value": 15 }
+    ],
+    "resourceSize": [
+      { "date": "2025-08-09", "value": 2950000 },
+      { "date": "2025-08-10", "value": 2930000 },
+      { "date": "2025-08-11", "value": 2900000 },
+      { "date": "2025-08-12", "value": 2880000 },
+      { "date": "2025-08-13", "value": 2870000 },
+      { "date": "2025-08-14", "value": 2860000 },
+      { "date": "2025-08-15", "value": 2850000 }
+    ]
+  },
+  "slowestPages": [
+    {
+      "url": "https://stupid-simple-apps.com/products",
+      "averageLoadTime": 5.2,
+      "p95LoadTime": 8.1,
+      "resourceCount": 62,
+      "totalBytes": 3800000
+    },
+    {
+      "url": "https://stupid-simple-apps.com/blog",
+      "averageLoadTime": 4.8,
+      "p95LoadTime": 7.5,
+      "resourceCount": 58,
+      "totalBytes": 3500000
+    },
+    {
+      "url": "https://stupid-simple-apps.com/about",
+      "averageLoadTime": 4.3,
+      "p95LoadTime": 6.9,
+      "resourceCount": 52,
+      "totalBytes": 3200000
+    }
+  ],
+  "slowestResources": [
+    {
+      "url": "https://stupid-simple-apps.com/js/vendor.js",
+      "averageLoadTime": 1.2,
+      "size": 850000,
+      "type": "script"
+    },
+    {
+      "url": "https://stupid-simple-apps.com/images/hero-banner.jpg",
+      "averageLoadTime": 0.95,
+      "size": 1200000,
+      "type": "image"
+    },
+    {
+      "url": "https://stupid-simple-apps.com/js/app.js",
+      "averageLoadTime": 0.85,
+      "size": 650000,
+      "type": "script"
+    },
+    {
+      "url": "https://stupid-simple-apps.com/api/products",
+      "averageLoadTime": 0.75,
+      "size": 120000,
+      "type": "xhr"
+    }
+  ],
+  "recommendations": [
+    {
+      "category": "JavaScript",
+      "impact": "high",
+      "title": "Reduce JavaScript bundle size",
+      "description": "Your main JavaScript bundles are quite large. Consider code splitting and lazy loading to improve initial load time."
+    },
+    {
+      "category": "Images",
+      "impact": "high",
+      "title": "Optimize hero images",
+      "description": "The hero banner is over 1MB. Compress this image and serve responsive versions for different screen sizes."
+    },
+    {
+      "category": "API",
+      "impact": "medium",
+      "title": "Implement API response caching",
+      "description": "Several API endpoints are called frequently. Implement proper caching strategies to reduce load times."
+    },
+    {
+      "category": "Errors",
+      "impact": "medium",
+      "title": "Fix JavaScript errors",
+      "description": "There are recurring JavaScript errors on several pages. These should be fixed to improve user experience."
+    },
+    {
+      "category": "Resources",
+      "impact": "medium",
+      "title": "Implement resource hints",
+      "description": "Use preconnect, preload, and prefetch to optimize loading of critical resources."
+    }
+  ]
+}
+

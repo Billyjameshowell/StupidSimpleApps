@@ -1,0 +1,312 @@
+{
+  "timestamp": "2025-08-15T20:00:00.000Z",
+  "url": "https://stupid-simple-apps.com",
+  "desktop": {
+    "scores": {
+      "performance": 72,
+      "accessibility": 88,
+      "best-practices": 92,
+      "seo": 95,
+      "pwa": 58
+    },
+    "metrics": {
+      "first-contentful-paint": 1.8,
+      "speed-index": 2.5,
+      "largest-contentful-paint": 2.9,
+      "time-to-interactive": 3.8,
+      "total-blocking-time": 250,
+      "cumulative-layout-shift": 0.12
+    },
+    "audits": {
+      "render-blocking-resources": {
+        "score": 0.6,
+        "numericValue": 320,
+        "displayValue": "320ms",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/css/main.css",
+              "wastedMs": 120
+            },
+            {
+              "url": "https://stupid-simple-apps.com/js/vendor.js",
+              "wastedMs": 200
+            }
+          ]
+        }
+      },
+      "unminified-css": {
+        "score": 0.8,
+        "numericValue": 25,
+        "displayValue": "Potential savings of 25KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/css/custom.css",
+              "wastedBytes": 25600
+            }
+          ]
+        }
+      },
+      "unminified-javascript": {
+        "score": 0.7,
+        "numericValue": 45,
+        "displayValue": "Potential savings of 45KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/js/app.js",
+              "wastedBytes": 46080
+            }
+          ]
+        }
+      },
+      "unused-javascript": {
+        "score": 0.6,
+        "numericValue": 120,
+        "displayValue": "Potential savings of 120KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/js/vendor.js",
+              "wastedBytes": 122880
+            }
+          ]
+        }
+      },
+      "uses-responsive-images": {
+        "score": 0.5,
+        "numericValue": 280,
+        "displayValue": "Potential savings of 280KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/images/hero.jpg",
+              "wastedBytes": 153600
+            },
+            {
+              "url": "https://stupid-simple-apps.com/images/about.jpg",
+              "wastedBytes": 133120
+            }
+          ]
+        }
+      },
+      "uses-optimized-images": {
+        "score": 0.6,
+        "numericValue": 180,
+        "displayValue": "Potential savings of 180KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/images/team.jpg",
+              "wastedBytes": 92160
+            },
+            {
+              "url": "https://stupid-simple-apps.com/images/office.jpg",
+              "wastedBytes": 92160
+            }
+          ]
+        }
+      },
+      "uses-text-compression": {
+        "score": 0.7,
+        "numericValue": 75,
+        "displayValue": "Potential savings of 75KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/js/app.js",
+              "wastedBytes": 51200
+            },
+            {
+              "url": "https://stupid-simple-apps.com/css/main.css",
+              "wastedBytes": 25600
+            }
+          ]
+        }
+      }
+    }
+  },
+  "mobile": {
+    "scores": {
+      "performance": 58,
+      "accessibility": 85,
+      "best-practices": 92,
+      "seo": 92,
+      "pwa": 58
+    },
+    "metrics": {
+      "first-contentful-paint": 2.5,
+      "speed-index": 3.8,
+      "largest-contentful-paint": 4.2,
+      "time-to-interactive": 5.6,
+      "total-blocking-time": 450,
+      "cumulative-layout-shift": 0.18
+    },
+    "audits": {
+      "render-blocking-resources": {
+        "score": 0.4,
+        "numericValue": 520,
+        "displayValue": "520ms",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/css/main.css",
+              "wastedMs": 180
+            },
+            {
+              "url": "https://stupid-simple-apps.com/js/vendor.js",
+              "wastedMs": 340
+            }
+          ]
+        }
+      },
+      "unminified-css": {
+        "score": 0.8,
+        "numericValue": 25,
+        "displayValue": "Potential savings of 25KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/css/custom.css",
+              "wastedBytes": 25600
+            }
+          ]
+        }
+      },
+      "unminified-javascript": {
+        "score": 0.7,
+        "numericValue": 45,
+        "displayValue": "Potential savings of 45KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/js/app.js",
+              "wastedBytes": 46080
+            }
+          ]
+        }
+      },
+      "unused-javascript": {
+        "score": 0.5,
+        "numericValue": 150,
+        "displayValue": "Potential savings of 150KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/js/vendor.js",
+              "wastedBytes": 153600
+            }
+          ]
+        }
+      },
+      "uses-responsive-images": {
+        "score": 0.3,
+        "numericValue": 420,
+        "displayValue": "Potential savings of 420KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/images/hero.jpg",
+              "wastedBytes": 230400
+            },
+            {
+              "url": "https://stupid-simple-apps.com/images/about.jpg",
+              "wastedBytes": 199680
+            }
+          ]
+        }
+      },
+      "uses-optimized-images": {
+        "score": 0.5,
+        "numericValue": 220,
+        "displayValue": "Potential savings of 220KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/images/team.jpg",
+              "wastedBytes": 112640
+            },
+            {
+              "url": "https://stupid-simple-apps.com/images/office.jpg",
+              "wastedBytes": 112640
+            }
+          ]
+        }
+      },
+      "uses-text-compression": {
+        "score": 0.7,
+        "numericValue": 75,
+        "displayValue": "Potential savings of 75KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/js/app.js",
+              "wastedBytes": 51200
+            },
+            {
+              "url": "https://stupid-simple-apps.com/css/main.css",
+              "wastedBytes": 25600
+            }
+          ]
+        }
+      },
+      "properly-sized-images": {
+        "score": 0.4,
+        "numericValue": 320,
+        "displayValue": "Potential savings of 320KB",
+        "details": {
+          "items": [
+            {
+              "url": "https://stupid-simple-apps.com/images/hero.jpg",
+              "wastedBytes": 204800
+            },
+            {
+              "url": "https://stupid-simple-apps.com/images/team.jpg",
+              "wastedBytes": 122880
+            }
+          ]
+        }
+      }
+    }
+  },
+  "recommendations": [
+    {
+      "category": "Performance",
+      "impact": "high",
+      "title": "Eliminate render-blocking resources",
+      "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles."
+    },
+    {
+      "category": "Performance",
+      "impact": "high",
+      "title": "Properly size images",
+      "description": "Serve images that are appropriately-sized to save cellular data and improve load time."
+    },
+    {
+      "category": "Performance",
+      "impact": "medium",
+      "title": "Efficiently encode images",
+      "description": "Optimized images load faster and consume less cellular data."
+    },
+    {
+      "category": "Performance",
+      "impact": "medium",
+      "title": "Reduce unused JavaScript",
+      "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity."
+    },
+    {
+      "category": "Performance",
+      "impact": "medium",
+      "title": "Enable text compression",
+      "description": "Text-based resources should be served with compression (gzip, deflate or brotli) to minimize total network bytes."
+    },
+    {
+      "category": "Accessibility",
+      "impact": "medium",
+      "title": "Image elements do not have [alt] attributes",
+      "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute."
+    }
+  ]
+}
+
