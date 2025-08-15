@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { useState, memo, useCallback } from "react";
 import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TALLY_FORM_URL } from "@/constants";
 
-export default function Header() {
+function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!mobileMenuOpen);
-  };
+  const toggleMobileMenu = useCallback(() => {
+    setMobileMenuOpen(prev => !prev);
+  }, []);
 
-  const closeMobileMenu = () => {
+  const closeMobileMenu = useCallback(() => {
     setMobileMenuOpen(false);
-  };
+  }, []);
 
   return (
     <header className="fixed w-full bg-white/80 backdrop-blur-sm z-50 border-b border-primary-200">
@@ -127,3 +127,5 @@ export default function Header() {
     </header>
   );
 }
+
+export default memo(Header);
