@@ -1,0 +1,82 @@
+{
+  "timestamp": "2025-08-15T16:45:00.000Z",
+  "desktop": {
+    "scores": {
+      "performance": 92,
+      "accessibility": 94,
+      "bestPractices": 96,
+      "seo": 95,
+      "pwa": 65
+    },
+    "metrics": {
+      "firstContentfulPaint": 1050,
+      "speedIndex": 1450,
+      "largestContentfulPaint": 1650,
+      "timeToInteractive": 1800,
+      "totalBlockingTime": 120,
+      "cumulativeLayoutShift": 0.02
+    },
+    "opportunities": [
+      {
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles.",
+        "savings": 500
+      },
+      {
+        "title": "Properly size images",
+        "description": "Serve images that are appropriately-sized to save cellular data and improve load time.",
+        "savings": 400
+      },
+      {
+        "title": "Efficiently encode images",
+        "description": "Optimized images load faster and consume less cellular data.",
+        "savings": 300
+      }
+    ]
+  },
+  "mobile": {
+    "scores": {
+      "performance": 85,
+      "accessibility": 92,
+      "bestPractices": 94,
+      "seo": 95,
+      "pwa": 60
+    },
+    "metrics": {
+      "firstContentfulPaint": 1350,
+      "speedIndex": 1850,
+      "largestContentfulPaint": 2450,
+      "timeToInteractive": 2200,
+      "totalBlockingTime": 220,
+      "cumulativeLayoutShift": 0.05
+    },
+    "opportunities": [
+      {
+        "title": "Eliminate render-blocking resources",
+        "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles.",
+        "savings": 700
+      },
+      {
+        "title": "Properly size images",
+        "description": "Serve images that are appropriately-sized to save cellular data and improve load time.",
+        "savings": 600
+      },
+      {
+        "title": "Efficiently encode images",
+        "description": "Optimized images load faster and consume less cellular data.",
+        "savings": 500
+      },
+      {
+        "title": "Reduce unused JavaScript",
+        "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity.",
+        "savings": 400
+      },
+      {
+        "title": "Reduce unused CSS",
+        "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity.",
+        "savings": 300
+      }
+    ]
+  }
+}
+

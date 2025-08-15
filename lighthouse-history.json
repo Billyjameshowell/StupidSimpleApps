@@ -1,0 +1,37 @@
+[
+  {
+    "timestamp": "2025-08-14T10:00:00.000Z",
+    "desktop": {
+      "performance": 90,
+      "accessibility": 92,
+      "bestPractices": 94,
+      "seo": 93,
+      "pwa": 62
+    },
+    "mobile": {
+      "performance": 82,
+      "accessibility": 90,
+      "bestPractices": 92,
+      "seo": 93,
+      "pwa": 58
+    }
+  },
+  {
+    "timestamp": "2025-08-15T16:45:00.000Z",
+    "desktop": {
+      "performance": 92,
+      "accessibility": 94,
+      "bestPractices": 96,
+      "seo": 95,
+      "pwa": 65
+    },
+    "mobile": {
+      "performance": 85,
+      "accessibility": 92,
+      "bestPractices": 94,
+      "seo": 95,
+      "pwa": 60
+    }
+  }
+]
+

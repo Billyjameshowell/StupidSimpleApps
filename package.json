@@ -13,7 +13,11 @@
     "analyze-deps": "node analyze-dependencies.js",
     "track-bundle": "node bundle-monitoring/track-bundle-size.js",
     "bundle-report": "node bundle-monitoring/generate-report.js",
-    "build-and-analyze": "npm run build && npm run analyze-bundle && npm run analyze-deps && npm run track-bundle"
+    "build-and-analyze": "npm run build && npm run analyze-bundle && npm run analyze-deps && npm run track-bundle",
+    "lighthouse": "node scripts/lighthouse-runner.js",
+    "lighthouse:prod": "node scripts/lighthouse-production.js",
+    "lighthouse:quick": "node scripts/lighthouse-quick.js",
+    "lighthouse:trends": "node scripts/lighthouse-trends.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -95,10 +99,14 @@
     "@types/ws": "^8.5.13",
     "@vitejs/plugin-react": "^4.3.2",
     "autoprefixer": "^10.4.20",
+    "chrome-launcher": "^1.2.0",
     "drizzle-kit": "^0.30.4",
     "esbuild": "^0.25.0",
+    "lighthouse": "^12.8.1",
+    "open": "^10.2.0",
     "postcss": "^8.4.47",
     "rollup-plugin-visualizer": "^6.0.3",
+    "serve": "^14.2.4",
     "tailwindcss": "^3.4.14",
     "tsx": "^4.19.1",
     "typescript": "5.6.3",
@@ -108,3 +116,4 @@
     "bufferutil": "^4.0.8"
   }
 }
+
