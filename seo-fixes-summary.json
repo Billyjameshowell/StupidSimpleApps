@@ -1,0 +1,87 @@
+{
+  "html_size": {
+    "before": 503,
+    "after": 2924,
+    "difference": 2421,
+    "percentage_increase": 481.3
+  },
+  "meta_tags": {
+    "added": [
+      "meta name='title'",
+      "meta name='description'",
+      "meta name='keywords'",
+      "meta name='author'",
+      "meta property='og:type'",
+      "meta property='og:url'",
+      "meta property='og:title'",
+      "meta property='og:description'",
+      "meta property='og:image'",
+      "meta property='twitter:card'",
+      "meta property='twitter:url'",
+      "meta property='twitter:title'",
+      "meta property='twitter:description'",
+      "meta property='twitter:image'",
+      "link rel='canonical'"
+    ],
+    "optimized": [
+      "title"
+    ]
+  },
+  "structured_data": {
+    "added": [
+      "Organization schema with contact information and social media links"
+    ],
+    "validation": {
+      "status": "passed",
+      "issues": []
+    }
+  },
+  "new_files_created": [
+    "robots.txt",
+    "sitemap.xml",
+    "images/og-CleanShot-2025-03-07-at-14.36.30@2x.png",
+    "images/og-CleanShot-2025-03-07-at-14.38.05@2x.png",
+    "images/og-CleanShot-2025-03-13-at-10.47.02@2x.png"
+  ],
+  "image_optimization": {
+    "original_images": [
+      {
+        "filename": "CleanShot 2025-03-07 at 14.36.30@2x.png",
+        "original_size_kb": 77
+      },
+      {
+        "filename": "CleanShot 2025-03-07 at 14.38.05@2x.png",
+        "original_size_kb": 159
+      },
+      {
+        "filename": "CleanShot 2025-03-13 at 10.47.02@2x.png",
+        "original_size_kb": 191
+      }
+    ],
+    "optimized_images": [
+      {
+        "filename": "og-CleanShot-2025-03-07-at-14.36.30@2x.png",
+        "optimized_size_kb": 16
+      },
+      {
+        "filename": "og-CleanShot-2025-03-07-at-14.38.05@2x.png",
+        "optimized_size_kb": 65
+      },
+      {
+        "filename": "og-CleanShot-2025-03-13-at-10.47.02@2x.png",
+        "optimized_size_kb": 121
+      }
+    ],
+    "total_size_reduction_kb": 225,
+    "percentage_reduction": 52.7
+  },
+  "seo_improvements": [
+    "Added comprehensive meta tags for better search engine visibility",
+    "Created structured data for organization information",
+    "Added robots.txt with proper directives",
+    "Created sitemap.xml with main pages",
+    "Optimized OG images for social sharing",
+    "Added canonical URL to prevent duplicate content issues"
+  ]
+}
+
