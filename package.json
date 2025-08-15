@@ -18,7 +18,12 @@
     "analyze-deps": "node analyze-dependencies.js",
     "track-bundle": "node bundle-monitoring/track-bundle-size.js",
     "bundle-report": "node bundle-monitoring/generate-report.js",
-    "build-and-analyze": "npm run build && npm run analyze-bundle && npm run analyze-deps && npm run track-bundle"
+    "build-and-analyze": "npm run build && npm run analyze-bundle && npm run analyze-deps && npm run track-bundle",
+    "performance:test": "npm run lighthouse",
+    "performance:test:prod": "npm run lighthouse:prod",
+    "performance:test:quick": "npm run lighthouse:quick",
+    "performance:trends": "npm run lighthouse:trends",
+    "performance:webpagetest": "npm run webpagetest"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

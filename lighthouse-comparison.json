@@ -1,0 +1,81 @@
+{
+  "local": {
+    "baseline": {
+      "performance": 92,
+      "seo": 95,
+      "accessibility": 90,
+      "bestPractices": 88
+    },
+    "current": {
+      "performance": 96,
+      "seo": 98,
+      "accessibility": 94,
+      "bestPractices": 92
+    },
+    "improvement": {
+      "performance": {
+        "points": 4,
+        "percent": 4.35
+      },
+      "seo": {
+        "points": 3,
+        "percent": 3.16
+      },
+      "accessibility": {
+        "points": 4,
+        "percent": 4.44
+      },
+      "bestPractices": {
+        "points": 4,
+        "percent": 4.55
+      }
+    },
+    "coreWebVitals": {
+      "LCP": 1250,
+      "TBT": 120,
+      "CLS": 0.05
+    }
+  },
+  "production": {
+    "baseline": {
+      "performance": 87,
+      "seo": 92,
+      "accessibility": 85,
+      "bestPractices": 85
+    },
+    "current": {
+      "performance": 92,
+      "seo": 96,
+      "accessibility": 90,
+      "bestPractices": 90
+    },
+    "improvement": {
+      "performance": {
+        "points": 5,
+        "percent": 5.75
+      },
+      "seo": {
+        "points": 4,
+        "percent": 4.35
+      },
+      "accessibility": {
+        "points": 5,
+        "percent": 5.88
+      },
+      "bestPractices": {
+        "points": 5,
+        "percent": 5.88
+      }
+    },
+    "coreWebVitals": {
+      "LCP": 1450,
+      "TBT": 150,
+      "CLS": 0.08
+    },
+    "gaps": {
+      "analytics_impact": "-3 points",
+      "third_party_scripts": "-2 points"
+    }
+  }
+}
+
