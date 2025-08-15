@@ -1,14 +1,15 @@
 [
   {
-    "timestamp": "2025-08-15T16:18:04.056Z",
-    "totalSizeKB": 405,
-    "jsSizeKB": 344,
-    "cssSizeKB": 61,
+    "timestamp": "2025-08-15T21:27:07.635Z",
+    "totalSizeKB": 336,
+    "jsSizeKB": 272,
+    "cssSizeKB": 64,
     "largeChunks": [
       {
-        "name": "index-iPXhqgJg.js",
-        "sizeKB": 344
+        "name": "index-DPRbT2ki.js",
+        "sizeKB": 272
       }
     ]
   }
 ]
+

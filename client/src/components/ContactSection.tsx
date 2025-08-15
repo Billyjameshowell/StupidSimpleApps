@@ -1,6 +1,6 @@
 import { Check } from "lucide-react";
-import ContactForm from "./ContactForm";
-import { CALENDLY_URL } from "@/constants";
+import { Button } from "@/components/ui/button";
+import { TALLY_FORM_URL } from "@/constants";
 
 export default function ContactSection() {
   return (
@@ -22,7 +22,34 @@ export default function ContactSection() {
                 </p>
               </div>
 
-              <ContactForm />
+              <div className="mt-8">
+                <Button
+                  asChild
+                  size="lg"
+                  className="w-full bg-[#0ea5e9] hover:bg-[#0284c7] text-white font-medium py-3 px-6 rounded-md transition"
+                >
+                  <a
+                    href={TALLY_FORM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center"
+                  >
+                    Get Started
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 ml-2"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </Button>
+              </div>
             </div>
 
             <div className="bg-[#0f172a] p-8 lg:p-12 text-white flex flex-col justify-between">
@@ -76,13 +103,13 @@ export default function ContactSection() {
                     />
                   </svg>
                   <a
-                    href="mailto:billy@stupid-simple-apps.com"
+                    href="mailto:hello@stupid-simple-apps.com"
                     className="text-[#7dd3fc] hover:text-[#bae6fd] transition"
                   >
-                    billy@stupid-simple-apps.com
+                    hello@stupid-simple-apps.com
                   </a>
                 </div>
-                
+
                 <div className="flex items-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -99,12 +126,12 @@ export default function ContactSection() {
                     />
                   </svg>
                   <a
-                    href={CALENDLY_URL}
+                    href={TALLY_FORM_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-[#7dd3fc] hover:text-[#bae6fd] transition"
                   >
-                    Schedule a call
+                    Get Started
                   </a>
                 </div>
               </div>

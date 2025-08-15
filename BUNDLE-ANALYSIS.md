@@ -6,23 +6,23 @@ This document provides an overview of the bundle size analysis and monitoring se
 
 As of the latest analysis:
 
-- **Total Bundle Size**: 405 KB
-- **JavaScript Bundle Size**: 344 KB
-- **CSS Bundle Size**: 61 KB
+- **Total Bundle Size**: 336 KB
+- **JavaScript Bundle Size**: 272 KB
+- **CSS Bundle Size**: 64 KB
 
 ### Large Chunks (>250KB)
 
-- `index-iPXhqgJg.js`: 344 KB
+- `index-DPRbT2ki.js`: 272 KB
 
 ## Largest Dependencies
 
 The top 5 largest dependencies in the project are:
 
 1. **react-icons**: 84,236 KB
-2. **lucide-react**: 25,166 KB
-3. **date-fns**: 23,467 KB
-4. **typescript**: 21,958 KB
-5. **drizzle-kit**: 16,503 KB
+2. **drizzle-kit**: 25,876 KB
+3. **lucide-react**: 25,166 KB
+4. **date-fns**: 23,467 KB
+5. **vite**: 22,299 KB
 
 ## Optimization Opportunities
 

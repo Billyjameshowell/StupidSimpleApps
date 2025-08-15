@@ -14,7 +14,7 @@ function SavingsCalculator() {
   ]);
   const [seats, setSeats] = useState<number>(20);
   const [savings, setSavings] = useState<number>(0);
-  const monthlyFlatFee = 750;
+  const monthlyFlatFee = 250;
 
   const addSubscription = useCallback(() => {
     const newId = Date.now().toString();
@@ -155,7 +155,7 @@ function SavingsCalculator() {
               ${monthlyFlatFee}/month (unlimited users)
             </p>
             <p className="text-xs text-primary-500 mt-1">
-              *Typical plans start at $750, but costs may vary based on scope.
+              *One-time project fee required for initial build, then $250/month for maintenance and support.
             </p>
           </div>
         </div>

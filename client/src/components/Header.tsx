@@ -2,7 +2,7 @@ import { useState, memo, useCallback } from "react";
 import { Link } from "wouter";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { CALENDLY_URL } from "@/constants";
+import { TALLY_FORM_URL } from "@/constants";
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -48,16 +48,22 @@ function Header() {
             >
               Testimonials
             </a>
+            <Link 
+              href="/hubspot-dashboard"
+              className="text-orange-500 hover:text-orange-600 font-medium transition"
+            >
+              HubSpot Dashboards
+            </Link>
             <Button
               asChild
               className="bg-[#0ea5e9] hover:bg-[#0284c7] text-white"
             >
               <a
-                href={CALENDLY_URL}
+                href={TALLY_FORM_URL}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Schedule a Call
+                Get Started
               </a>
             </Button>
           </nav>
@@ -100,14 +106,21 @@ function Header() {
           >
             Testimonials
           </a>
+          <Link
+            href="/hubspot-dashboard"
+            className="block py-2 px-2 text-orange-500 hover:bg-orange-50 rounded"
+            onClick={closeMobileMenu}
+          >
+            HubSpot Dashboards
+          </Link>
           <a
-            href={CALENDLY_URL}
+            href={TALLY_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="block py-2 px-2 bg-[#0ea5e9] text-white rounded text-center"
             onClick={closeMobileMenu}
           >
-            Schedule a Call
+            Get Started
           </a>
         </div>
       </div>

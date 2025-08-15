@@ -1,0 +1,6 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://stupid-simple-apps.com/sitemap.xml

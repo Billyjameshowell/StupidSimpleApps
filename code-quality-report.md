@@ -2,24 +2,24 @@
 
 ## Summary
 
-The analysis of the StupidSimpleApps React codebase has identified several areas for improvement related to performance and code quality. The scan covered 63 React files and found a total of 58 issues across different categories.
+The analysis of the StupidSimpleApps React codebase has identified several areas for improvement related to performance and code quality. The scan covered 66 React files and found a total of 73 issues across different categories.
 
 ## Issues Breakdown
 
 | Issue Type | Count | Description |
 |------------|-------|-------------|
 | Console logs | 0 | No console.log statements found in the codebase |
-| Missing memoization | 22 | Components that could benefit from React.memo, useMemo, or useCallback |
+| Missing memoization | 26 | Components that could benefit from React.memo, useMemo, or useCallback |
 | Key prop issues | 1 | Instances where key props are missing in list rendering |
-| React anti-patterns | 4 | Practices that go against React best practices |
-| Unnecessary re-renders | 31 | Code patterns that may cause unnecessary component re-renders |
+| React anti-patterns | 13 | Practices that go against React best practices |
+| Unnecessary re-renders | 33 | Code patterns that may cause unnecessary component re-renders |
 
 ## Detailed Analysis
 
 ### 1. Console Logs (0 issues)
 No console.log statements were found in the codebase, which is excellent for production code.
 
-### 2. Missing Memoization (22 issues)
+### 2. Missing Memoization (26 issues)
 
 Components that could benefit from memoization to prevent unnecessary re-renders:
 
@@ -34,6 +34,8 @@ Components that could benefit from memoization to prevent unnecessary re-renders
   - skeleton.tsx
   - toaster.tsx
 - **Page Components**: 
+  - Home.tsx
+  - HubspotDashboard.tsx
   - not-found.tsx
 - **Section Components**:
   - ClientsSection.tsx
@@ -44,7 +46,9 @@ Components that could benefit from memoization to prevent unnecessary re-renders
   - HeroSection.tsx
   - HowItWorksSection.tsx
   - Layout.tsx
+  - SEO.tsx
   - SavingsCalculator.tsx
+  - StructuredData.tsx
   - TestimonialsSection.tsx
 
 **Example Fix**: Wrap components with React.memo when they receive props but don't need to re-render often:
@@ -72,7 +76,7 @@ export default React.memo(Footer);
 **Example Issue**: In chart.tsx, there's a map function that might be missing proper key props:
 
 ```jsx
-// Line 286-310 in chart.tsx
+// In chart.tsx
 {payload.map((item) => {
   const key = `${nameKey || item.dataKey || "value"}`;
   const itemConfig = getPayloadConfigFromPayload(config, item, key);
@@ -92,40 +96,98 @@ export default React.memo(Footer);
 
 **Recommended Fix**: Use a more reliable unique identifier for the key prop.
 
-### 4. React Anti-Patterns (4 issues)
+### 4. React Anti-Patterns (13 issues)
 
 - **ClientsSection.tsx**: 1 anti-pattern
+- **SEO.tsx**: 9 anti-patterns (direct DOM manipulation)
 - **TestimonialsSection.tsx**: 2 anti-patterns
 - **main.tsx**: 1 anti-pattern
 
 **Example Issues**:
 
-1. In TestimonialsSection.tsx:
-   - Using index as key in map functions:
+1. In SEO.tsx - Direct DOM manipulation:
+   ```jsx
+   // Direct DOM manipulation in SEO.tsx
+   useEffect(() => {
+     document.title = title;
+     
+     // Primary meta tags
+     const metaDescription = document.querySelector('meta[name="description"]');
+     if (metaDescription) {
+       metaDescription.setAttribute('content', description);
+     }
+     
+     // More DOM manipulations...
+   }, [/* dependencies */]);
+   ```
+
+2. In TestimonialsSection.tsx - Using index as key in map functions:
    ```jsx
    {testimonials.map((testimonial, index) => (
-     <div key={index} className="bg-[#1e293b] rounded-xl p-6 border border-[#334155] shadow-lg relative">
+     <div
+       key={index}
+       className="group relative bg-[#1e293b] border border-[#334155] rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-shadow duration-300"
+     >
        {/* Component content */}
      </div>
    ))}
    ```
-   - Another instance of index as key:
+   
    ```jsx
    {[...Array(5)].map((_, i) => (
-     <Star key={i} className="h-5 w-5 fill-current" />
+     <Star
+       key={i}
+       className="h-5 w-5 fill-[#38bdf8] text-[#38bdf8]"
+     />
    ))}
    ```
 
-**Recommended Fix**: Use unique identifiers from the data instead of array indices when possible.
+**Recommended Fixes**:
 
-### 5. Unnecessary Re-renders (31 issues)
+1. For SEO.tsx - Use React Helmet or Next.js Head component instead of direct DOM manipulation:
+   ```jsx
+   import { Helmet } from 'react-helmet';
+   
+   export default function SEO({ title, description, /* other props */ }) {
+     return (
+       <Helmet>
+         <title>{title}</title>
+         <meta name="description" content={description} />
+         <meta property="og:title" content={ogTitle} />
+         {/* Other meta tags */}
+       </Helmet>
+     );
+   }
+   ```
+
+2. For TestimonialsSection.tsx - Use unique identifiers from the data:
+   ```jsx
+   // Add IDs to testimonials data
+   const testimonials = [
+     {
+       id: "testimonial-1",
+       quote: "A pleasure to work with...",
+       // other properties
+     },
+     // other testimonials
+   ];
+   
+   // Then use the ID as key
+   {testimonials.map((testimonial) => (
+     <div key={testimonial.id} className="...">
+       {/* Component content */}
+     </div>
+   ))}
+   ```
+
+### 5. Unnecessary Re-renders (33 issues)
 
 Components with patterns that may cause unnecessary re-renders:
 
 - **SavingsCalculator.tsx**: 6 issues
   - Inline function definitions in event handlers
   - Multiple state updates that could be combined
-- **Header.tsx**: 5 issues
+- **Header.tsx**: 6 issues
 - **UI Components**:
   - carousel.tsx: 4 issues
   - chart.tsx: 4 issues
@@ -133,6 +195,7 @@ Components with patterns that may cause unnecessary re-renders:
   - form.tsx: 2 issues
   - calendar.tsx, progress.tsx, toggle-group.tsx: 1 issue each
 - **ContactForm.tsx**: 2 issues
+- **SEO.tsx**: 1 issue
 
 **Example Issues in SavingsCalculator.tsx**:
 
@@ -209,13 +272,15 @@ useEffect(() => {
 
 ## Files That Failed Analysis
 
-No files failed analysis. All 63 React files were successfully analyzed.
+No files failed analysis. All 66 React files were successfully analyzed.
 
 ## Recommendations
 
 1. **Add Memoization**: Use React.memo for components that receive props but don't need to re-render often.
 2. **Fix Key Prop Issues**: Ensure all list items have stable, unique keys.
-3. **Address Anti-Patterns**: Replace index-based keys with unique identifiers when possible.
+3. **Address Anti-Patterns**: 
+   - Replace index-based keys with unique identifiers when possible
+   - Replace direct DOM manipulation with React-friendly alternatives like React Helmet
 4. **Optimize Renders**: 
    - Use useCallback for event handlers
    - Use useMemo for derived values
@@ -225,7 +290,11 @@ No files failed analysis. All 63 React files were successfully analyzed.
 
 ## Next Steps
 
-1. Prioritize fixing the SavingsCalculator.tsx, Header.tsx, and chart.tsx components as they have the most issues.
+1. Prioritize fixing the SEO.tsx, SavingsCalculator.tsx, and Header.tsx components as they have the most issues.
 2. Implement a code review process that checks for these common issues.
-3. Consider adding ESLint rules to catch these issues during development.
+3. Consider adding ESLint rules to catch these issues during development, such as:
+   - `react/jsx-key` to enforce keys in iterators
+   - `react/no-direct-mutation-state` to prevent state mutations
+   - `react-hooks/exhaustive-deps` to ensure proper dependency arrays
+   - `react/jsx-no-bind` to prevent inline function definitions
 

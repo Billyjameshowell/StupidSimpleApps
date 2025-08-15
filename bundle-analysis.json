@@ -1,43 +1,48 @@
 {
-  "totalSize": 414743,
-  "totalSizeKB": 405,
+  "totalSize": 343623,
+  "totalSizeKB": 336,
   "js": {
-    "totalSize": 352614,
-    "totalSizeKB": 344,
+    "totalSize": 278421,
+    "totalSizeKB": 272,
     "chunks": [
       {
-        "name": "index-iPXhqgJg.js",
-        "size": 352614,
-        "sizeKB": 344
+        "name": "index-DPRbT2ki.js",
+        "size": 278421,
+        "sizeKB": 272
       }
     ]
   },
   "css": {
-    "totalSize": 62129,
-    "totalSizeKB": 61,
+    "totalSize": 65202,
+    "totalSizeKB": 64,
     "chunks": [
       {
-        "name": "index-BsoIUweN.css",
-        "size": 62129,
-        "sizeKB": 61
+        "name": "index-BaM8auRV.css",
+        "size": 65202,
+        "sizeKB": 64
       }
     ]
   },
   "largeChunks": [
     {
-      "name": "index-iPXhqgJg.js",
-      "size": 352614,
-      "sizeKB": 344
+      "name": "index-DPRbT2ki.js",
+      "size": 278421,
+      "sizeKB": 272
     }
   ],
-  "timestamp": "2025-08-15T16:15:23.896Z",
+  "timestamp": "2025-08-15T21:26:57.512Z",
   "dependencies": {
-    "totalNodeModulesSizeKB": 314485,
+    "totalNodeModulesSizeKB": 364140,
     "largestDependencies": [
       {
         "name": "react-icons",
         "version": "^5.4.0",
         "sizeKB": 84236
+      },
+      {
+        "name": "drizzle-kit",
+        "version": "^0.30.4",
+        "sizeKB": 25876
       },
       {
         "name": "lucide-react",
@@ -50,24 +55,19 @@
         "sizeKB": 23467
       },
       {
+        "name": "vite",
+        "version": "^5.4.14",
+        "sizeKB": 22299
+      },
+      {
         "name": "typescript",
         "version": "5.6.3",
         "sizeKB": 21958
       },
       {
-        "name": "drizzle-kit",
-        "version": "^0.30.4",
-        "sizeKB": 16503
-      },
-      {
-        "name": "vite",
-        "version": "^5.4.14",
-        "sizeKB": 12819
-      },
-      {
         "name": "tsx",
         "version": "^4.19.1",
-        "sizeKB": 10308
+        "sizeKB": 20052
       },
       {
         "name": "esbuild",
@@ -98,11 +98,11 @@
       "severity": "medium",
       "dependencies": [
         "react-icons",
+        "drizzle-kit",
         "lucide-react",
         "date-fns",
-        "typescript",
-        "drizzle-kit",
         "vite",
+        "typescript",
         "tsx",
         "esbuild",
         "drizzle-orm",
@@ -111,3 +111,4 @@
     }
   ]
 }
+

@@ -33,8 +33,13 @@ function hasLazyLoading(filePath) {
       const fileName = path.basename(filePath);
       // Search for references to this file with lazy loading
       const command = `grep -r "loading=\\"lazy\\"" --include="*.tsx" --include="*.jsx" --include="*.html" ./client/src`;
-      const result = execSync(command, { encoding: 'utf8' });
-      return result.includes(fileName);
+      try {
+        const result = execSync(command, { encoding: 'utf8' });
+        return result.includes(fileName);
+      } catch (error) {
+        // grep returns non-zero exit code when no matches are found
+        return false;
+      }
     }
     return false;
   } catch (error) {

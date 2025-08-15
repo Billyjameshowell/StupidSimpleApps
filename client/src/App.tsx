@@ -8,6 +8,7 @@ import Layout from "@/components/Layout";
 // Lazy load page components
 const Home = lazy(() => import("@/pages/Home"));
 const NotFound = lazy(() => import("@/pages/not-found"));
+const HubspotDashboard = lazy(() => import("@/pages/HubspotDashboard"));
 
 // Memoize the Router component to prevent unnecessary re-renders
 const Router = memo(function Router() {
@@ -16,6 +17,7 @@ const Router = memo(function Router() {
       <Suspense fallback={<div>Loading...</div>}>
         <Switch>
           <Route path="/" component={Home} />
+          <Route path="/hubspot-dashboard" component={HubspotDashboard} />
           <Route component={NotFound} />
         </Switch>
       </Suspense>
