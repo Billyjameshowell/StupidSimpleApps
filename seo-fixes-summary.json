@@ -37,8 +37,6 @@
     }
   },
   "new_files_created": [
-    "robots.txt",
-    "sitemap.xml",
     "images/og-CleanShot-2025-03-07-at-14.36.30@2x.png",
     "images/og-CleanShot-2025-03-07-at-14.38.05@2x.png",
     "images/og-CleanShot-2025-03-13-at-10.47.02@2x.png"
@@ -78,8 +76,6 @@
   "seo_improvements": [
     "Added comprehensive meta tags for better search engine visibility",
     "Created structured data for organization information",
-    "Added robots.txt with proper directives",
-    "Created sitemap.xml with main pages",
     "Optimized OG images for social sharing",
     "Added canonical URL to prevent duplicate content issues"
   ]
