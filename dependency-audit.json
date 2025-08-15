@@ -1,0 +1,166 @@
+{
+  "unused_packages": [
+    {
+      "name": "@jridgewell/trace-mapping",
+      "size": "175KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "connect-pg-simple",
+      "size": "26KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "express-session",
+      "size": "185KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "framer-motion",
+      "size": "3.1MB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "memorystore",
+      "size": "62KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "passport",
+      "size": "163KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "passport-local",
+      "size": "11KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "react-icons",
+      "size": "83MB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "ws",
+      "size": "152KB",
+      "reason": "Not imported in any source files"
+    }
+  ],
+  "unused_dev_packages": [
+    {
+      "name": "@types/connect-pg-simple",
+      "size": "7.5KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "@types/express-session",
+      "size": "26KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "@types/passport",
+      "size": "46KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "@types/passport-local",
+      "size": "7KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "@types/ws",
+      "size": "23KB",
+      "reason": "Not imported in any source files"
+    },
+    {
+      "name": "autoprefixer",
+      "size": "224KB",
+      "reason": "Not imported in any source files, but may be used by PostCSS"
+    },
+    {
+      "name": "postcss",
+      "size": "213KB",
+      "reason": "Not imported in any source files, but may be used by build tools"
+    }
+  ],
+  "heavy_packages": [
+    {
+      "name": "react-icons",
+      "size": "83MB",
+      "alternatives": [
+        {
+          "name": "lucide-react",
+          "size": "25MB",
+          "notes": "Already in use in the project, provides a comprehensive icon set with smaller bundle size"
+        },
+        {
+          "name": "@heroicons/react",
+          "notes": "Lightweight icon set by the Tailwind team"
+        }
+      ]
+    },
+    {
+      "name": "lucide-react",
+      "size": "25MB",
+      "alternatives": [
+        {
+          "name": "@heroicons/react",
+          "notes": "Smaller icon set by the Tailwind team"
+        },
+        {
+          "name": "phosphor-react",
+          "notes": "Flexible icon family with smaller bundle size"
+        }
+      ]
+    },
+    {
+      "name": "date-fns",
+      "size": "23MB",
+      "alternatives": [
+        {
+          "name": "dayjs",
+          "notes": "Lightweight alternative (2KB) with similar API"
+        },
+        {
+          "name": "date-fns/lite",
+          "notes": "Smaller subset of date-fns functionality"
+        }
+      ]
+    },
+    {
+      "name": "recharts",
+      "size": "4.7MB",
+      "alternatives": [
+        {
+          "name": "react-chartjs-2",
+          "notes": "Lighter alternative based on Chart.js"
+        },
+        {
+          "name": "visx",
+          "notes": "Modular charting library by Airbnb"
+        }
+      ]
+    },
+    {
+      "name": "framer-motion",
+      "size": "3.1MB",
+      "alternatives": [
+        {
+          "name": "react-spring",
+          "notes": "Smaller animation library"
+        },
+        {
+          "name": "auto-animate",
+          "notes": "Tiny animation utility"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "unused_dependencies_count": 9,
+    "unused_dev_dependencies_count": 7,
+    "potential_size_savings": "86.9MB",
+    "notes": "The largest unused dependency is react-icons at 83MB. Removing unused dependencies could significantly reduce the project size and improve build times."
+  }
+}
+
